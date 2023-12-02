@@ -1,0 +1,125 @@
+/* Resetting default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Style the main sections */
+section {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #333;
+}
+
+
+/* Styling for active page link */
+.active_page a {
+  display: inline-block;
+  background-color: white; /* Change to the color you prefer */
+  color: black; /* Change to the text color you prefer */
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Optional: add border radius for rounded corners */
+}
+
+/* Styling for main content section */
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align headings */
+h1, h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Removing default list styles */
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Adding margin to list items */
+li {
+  margin-bottom: 8px;
+}
+
+/* Strong class styling */
+strong {
+  font-weight: bold;
+}
+
+/* Link styling */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for project descriptions as bullet points */
+section h2 + ol {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+section ol li {
+  margin-bottom: 8px;
+}
+
+/* Styles for lists inside the ordered list under projects */
+section ol li ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+section ol li ul li {
+  margin-bottom: 4px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+}
