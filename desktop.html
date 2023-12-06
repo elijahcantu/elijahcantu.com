@@ -10,13 +10,23 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="/">About</a></li>
-      <li><a href="mobile">Mobile</a></li>
-      <li class="active_page"><a href="desktop">Desktop</a></li>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="tutorials" class="dropbtn">Tutorials</a>
+          <div class="dropdown-content">
+            <a href="mobile">Mobile</a>
+            <a href="desktop">Desktop</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">home</a></li>
+      <li class="breadcrumb-item"><a href="tutorials">tutorials</a></li>
+      <li class="breadcrumb-item">desktop</li>
     </ul>
-  </nav>
 
   <main>
     <progress value="50" max="100"></progress>
