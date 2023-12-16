@@ -40,7 +40,7 @@ nav a:hover {
 .dropdown {
   position: relative;
   display: inline-block;
-  
+
 }
 
 /* Style the dropdown button */
@@ -60,7 +60,7 @@ nav a:hover {
   width: 101px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
-  
+
 }
 
 /* Style the links inside the dropdown */
@@ -95,10 +95,14 @@ h1 {
 /* Styling for active page link */
 .active_page a {
   display: inline-block;
-  background-color: white; /* Change to the color you prefer */
-  color: black; /* Change to the text color you prefer */
-  padding: 5px 10px; /* Adjust padding as needed */
-  border-radius: 5px; /* Optional: add border radius for rounded corners */
+  background-color: white;
+  /* Change to the color you prefer */
+  color: black;
+  /* Change to the text color you prefer */
+  padding: 5px 10px;
+  /* Adjust padding as needed */
+  border-radius: 5px;
+  /* Optional: add border radius for rounded corners */
 }
 
 /* Styling for main content section */
@@ -112,13 +116,15 @@ section {
 }
 
 /* Center-align headings */
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   font-weight: bold;
 }
 
 /* Removing default list styles */
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   padding: 0;
 }
@@ -144,7 +150,7 @@ a:hover {
 }
 
 /* Styling for project descriptions as bullet points */
-section h2 + ol {
+section h2+ol {
   list-style-type: disc;
   margin-left: 20px;
 }
@@ -181,7 +187,8 @@ main {
 }
 
 progress {
-  width: 50%; /* Adjust the width as needed */
+  width: 50%;
+  /* Adjust the width as needed */
   margin-bottom: 20px;
 }
 
@@ -193,9 +200,12 @@ progress {
 }
 
 @keyframes wave {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-50px);
   }
@@ -205,9 +215,11 @@ progress {
 .breadcrumb {
   list-style: none;
   margin-top: 10px;
-  font-size: 14px; /* Adjusted font size */
+  font-size: 14px;
+  /* Adjusted font size */
   color: #555;
-  font-family: 'SF Mono', monospace; /* Use SF Mono Regular font */
+  font-family: 'SF Mono', monospace;
+  /* Use SF Mono Regular font */
   display: flex;
   align-items: center;
 }
@@ -219,22 +231,26 @@ progress {
 
 .breadcrumb-item::before {
   content: '/';
-  
-  color: #777; /* Slash color */
+
+  color: #777;
+  /* Slash color */
 }
 
 .breadcrumb-item:first-child::before {
   content: '~/';
   margin-left: 10px;
-  color: #777; /* Tilde color */
+  color: #777;
+  /* Tilde color */
 }
 
 .breadcrumb-item a {
   text-decoration: none;
-  color: #007bff; /* Link color */
+  color: #007bff;
+  /* Link color */
   transition: color 0.3s;
 }
 
 .breadcrumb-item a:hover {
-  color: #0056b3; /* Hovered link color */
+  color: #0056b3;
+  /* Hovered link color */
 }
