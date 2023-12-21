@@ -2,152 +2,341 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
- <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Site Properties -->
   <title>Elijah Cantu</title>
+  <link rel="shortcut icon" type="image/x-icon" href="caelijah.jpeg">
+  <meta name="description" content="Elijah Cantu">
+  <meta name="keywords" content="caelijah, Elijah Cantu">
+  <meta name="author" content="Elijah Cantu">
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Devicon Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- Fomantic UI CSS library -->
+  <!-- https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLGVFWSJJ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DLGVFWSJJ3');
+  </script>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li class="dropdown">
-        <a href="tutorials" class="dropbtn">Tutorials</a>
-        <div class="dropdown-content">
-          <a href="mobile">Mobile</a>
-          <a href="desktop">Desktop</a>
+  <!-- Main page  -->
+  <div class="ui text container">
+    <a class="ui right floated icon button" data-tooltip="GitHub" data-position="bottom right"
+      href="https://github.com/uhliejuh/" target="_blank">
+      <i class="github icon"></i>
+    </a>
+    <a class="ui right floated icon button" data-tooltip="E-mail" data-position="bottom right"
+      href="mailto:caelijah@umich.edu" target="_blank">
+      <i class="ui icon envelope"></i>
+    </a>
+    <a class="ui right floated icon button" data-tooltip="LinkedIn" data-position="bottom right"
+      href="https://www.linkedin.com/in/elijahcantu/" target="_blank">
+      <i class="ui icon linkedin"></i>
+    </a>
+    <header>
+      <h1>Elijah Cantu</h1>
+      <p>
+        <img class="ui left floated rounded small image" alt="Elijah Cantu headshot" src="caelijah.jpeg">
+        I am Elijah Cantu, a junior at the University of Michigan College of Engineering. I am majoring in Computer
+        Science and minoring in User Experience Design. My interests are in full-stack
+        development and educating people on how to reduce their screen time.
+      </p>
+    </header>
+    <!-- Internal links -->
+    <nav class="ui four item menu">
+      <a href="#tutorials" class="item">Tutorials</a>
+      <a href="#skills" class="item">Skills</a>
+      <a href="#projects" class="item">Projects</a>
+      <a href="#contact" class=" item">Contact</a>
+    </nav>
+    <!-- Tutorials section -->
+    <section id="tutorials">
+      <h2>Tutorials (Currently in Development)</h2>
+      <p>
+        Tutorials I have created on restricting devices to manage screen time for individuals, spouses, and families.
+      </p>
+      <div class="ui two stackable cards">
+        <div class="ui fluid card">
+          <div class="content" style="flex-grow: 0;">
+            <div class="header">
+              Mobile
+              <i class="icon apple"></i><i class="icon android"></i>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              <a href="https://support.apple.com/en-us/108806" target="_blank">Screen Time</a> for IOS and
+              <a href="https://docs.pluckeye.net/andoff" target="_blank">Andoff</a> for Android.
+            </p>
+          </div>
+        </div><!-- /fluid card -->
+
+        <div class="ui fluid card">
+          <div class="content">
+            <div class="header">
+              Desktop
+              <i class="icon apple"></i>
+              <i class="icon windows"></i>
+              <i class="icon linux"></i>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              <a href="https://pluckyfilter.com/" target="_blank">Plucky</a>,
+              <a href="https://getcoldturkey.com/" target="_blank">Cold Turkey Blocker</a>, and
+              <a href="https://support.apple.com/en-us/HT210387" target="_blank">Screen Time</a>.
+            </p>
+          </div>
+        </div><!-- /fluid card -->
+      </div><!-- /stackable cards -->
+    </section><!-- /tutorials -->
+    <div class="ui section divider"></div>
+
+    <!-- Skills section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="ui two stackable cards">
+
+        <div class="ui fluid card">
+          <div class="content">
+            <div class="header">Programming Languages</div>
+          </div>
+          <div class="content">
+            <a data-tooltip="C++" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                width="25px" alt="C Plus Plus" />
+            </a>
+            <a data-tooltip="C" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="25px" alt="C" />
+            </a>
+
+            <a data-tooltip="C#" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="25px"
+                alt="C Sharp" />
+            </a>
+            <a data-tooltip="Python" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="25px"
+                alt="Python" />
+            </a>
+            <a data-tooltip="HTML" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="25px"
+                alt="HTML" />
+            </a>
+            <a data-tooltip="CSS" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="25px"
+                alt="CSS" />
+            </a>
+            <a data-tooltip="JavaScript" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                width="25px" alt="JavaScript" />
+            </a>
+            <a data-tooltip="Julia" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" width="25px"
+                alt="Julia" />
+            </a>
+            <a data-tooltip="MATLAB" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" width="25px"
+                alt="MATLAB" />
+            </a>
+          </div>
         </div>
-      </li>
-    </ul>
-  </nav>
-  <ul class="breadcrumb">
-    <li class="breadcrumb-item">home</li>
-  </ul>
 
+        <div class="ui fluid card">
+          <div class="content">
+            <div class="header">IDEs and OS</div>
+          </div>
+          <div class="content">
+            <a data-tooltip="VS Code" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="25px"
+                alt="VSCode" />
+            </a>
+            <a data-tooltip="Visual Studio" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                width="25px" alt="Visual Studio" />
+            </a>
+            <a data-tooltip="Xcode" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" width="25px"
+                alt="Xcode" />
+            </a>
+            <a data-tooltip="Android Studio" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+                width="25px" alt="Android Studio" />
+            </a>
+            <a data-tooltip="macOS" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="25px"
+                alt="macOS" />
+            </a>
+            <a data-tooltip="Windows" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="25px"
+                alt="Windows" />
+            </a>
+            <a data-tooltip="Linux" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="25px"
+                alt="Linux" />
+            </a>
+            <a data-tooltip="ChromeOS" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" width="25px"
+                alt="ChromeOS" />
+            </a>
+            <a data-tooltip="IOS" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="25px"
+                alt="IOS" />
+            </a>
+            <a data-tooltip="Android" data-variation="mini basic" data-position="top left">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="25px"
+                alt="Android" />
+            </a>
+          </div>
+        </div>
+      </div><!-- /stackable cards -->
+    </section><!-- /skills -->
+    <div class="ui section divider"></div>
 
-  <section>
-    <h1>About Me</h1>
-    <p>
-      Hello, my name is Elijah Cantu, I am a computer science major with an interest in full stack development. Feel
-      free to learn more about me below or check out my mobile and desktop tutorials on how to reduce screentime
-      above.
-    </p>
-  </section>
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="ui two stackable cards">
+        <a class="ui raised card" target="_blank" href="https://eecs281staff.github.io/p4-pokemon">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Pokemon
+            </div>
+          </div>
+        </a>
 
-  <section>
-    <h1>Skills</h1>
-    <ul>
-      <li><strong>Backend:</strong> C++, C, C#, Python</li>
-      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-      <li><strong>Databases:</strong> SQLite3</li>
-      <li><strong>Web Scraping</strong> BeautifulSoup4</li>
-      <li><strong>Low Level: </strong> Assembly, Machine Code</li>
-      <li><strong>Computation: </strong> MATLAB, Julia</li>
-      <li><strong>APIs:</strong> TomTom (Geolocation), Yelp (Business)</li>
-      <li><strong>OS:</strong> macOS, Windows, Linux, ChromeOS, iOS, Android</li>
-      <li><strong>IDEs</strong> Visual Studio Code, Visual Studio, Xcode</li>
-      <li><strong>Game Engines:</strong> Unity, Unreal Engine, Godot</li>
-      <li><strong>3D Design and Animation:</strong> Blender</li>
-      <li><strong>Version Control:</strong> Git</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </section>
+        <a class="ui raised card" target="_blank" href="https://eecs281staff.github.io/p3-sillyql/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              SillyQL
+            </div>
+          </div>
+        </a>
+        <a class="ui raised card" target="_blank" href="https://eecs281staff.github.io/p2b-priority-queues/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Priority Queues
+            </div>
+          </div>
+        </a>
 
-  <section>
-    <h1>Projects</h1>
-    <ol>
-      <li>
-        <strong>Back to the Ship:</strong>
-        <ul>
-          <li>Implemented stack and queue algorithms in C++ for a space station simulation.</li>
-          <li>Features include stack and queue modes, map and list outputs, and support for command line flags.</li>
-          <li>Ensured input validation error-checking and implemented functionalities for coordinate list input mode.
-          </li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs281staff.github.io/p2-a-new-heap/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              A New Heap
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>A New Heap:</strong>
-        <ul>
-          <li>Developed a galactic combat simulation in C++ using priority queues for Jedi and Sith troop deployments.
-          </li>
-          <li>Custom comparators created for different priority queues.</li>
-          <li>Introduced a 'Movie Watcher' mode optimizing scenarios for movie viewers based on troop deployments.</li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs281staff.github.io/p1-back-to-the-ship/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Back to the Ship
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>Priority Queues:</strong>
-        <ul>
-          <li>Implemented various priority queues in C++, including Sorted, Binary, and Pairing Priority Queues.</li>
-          <li>Focused on runtime complexities, utilizing tree structures, and implementing specific comparator
-            functions.</li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs280staff.github.io/p5-ml/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Machine Learning
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>SillyQL:</strong>
-        <ul>
-          <li>Implemented SillyQL, a database query language in C++.</li>
-          <li>Designed and implemented functionality for commands such as CREATE, INSERT, PRINT, REMOVE, and QUIT.</li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs280staff.github.io/p4-web/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Web
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>Pokemon:</strong>
-        <ul>
-          <li>Solved the Traveling Salesman Problem (TSP) in C++.</li>
-          <li>Developed a branch-and-bound algorithm optimizing for time efficiency and solution quality.</li>
-          <li>Utilized bounding functions and heuristics for enhanced algorithmic performance.</li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs280staff.github.io/p3-euchre/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Euchre
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>Social Justice Data Analysis Project:</strong>
-        <ul>
-          <li>Conducted a data analysis project in Python focusing on CSV files from SAT Suite of Assessments and
-            American Community Survey.</li>
-          <li>Developed functions for loading, analyzing, and comparing data, and CSV file generation.</li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs280staff.github.io/p2-cv/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Computer Vision
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>Airbnb Compliance Scraper:</strong>
-        <ul>
-          <li>Implemented a Python web scraping project using BeautifulSoup on Airbnb.com HTML files.</li>
-          <li>Assessed Airbnb's compliance with San Francisco's short-term rental laws in the Mission District.</li>
-          <li>Developed functions for parsing HTML, extracting information, validating policy numbers, and creating a
-            CSV listing database.</li>
-        </ul>
-      </li>
+        <a class="ui raised card" target="_blank" href="https://eecs280staff.github.io/p1-stats/">
+          <div class="content">
+            <div class="right aligned floating ui teal label">
+              C++
+            </div>
+            <div class="header">
+              Statistics
+            </div>
+          </div>
+        </a>
 
-      <li>
-        <strong>Sin City Wasn't Made For You:</strong>
-        <ul>
-          <li>Conducted a data-driven project in Python using SQLite to analyze Nevada's tourism data.</li>
-          <li>Utilized web scraping for population stats and the Yelp API for hotel information.</li>
-          <li>Created visualizations showcasing top-rated hotels and tourist attractions, integrating TomTom API for
-            geographical data.</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
+      </div><!-- /stackable cards -->
+    </section><!-- /projects -->
+  </div><!-- /text container -->
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:caelijah@umich.edu">caelijah@umich.edu</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/elijahcantu" target="_blank">linkedin.com/in/elijahcantu</a>
-    </p>
-    <p>GitHub: <a href="https://github.com/uhliejuh" target="_blank">github.com/uhliejuh</a></p>
-    <!-- Add more contact information as needed -->
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Elijah Cantu. All rights reserved.</p>
+  <!-- Footer with contact information -->
+  <footer class="ui inverted segment center aligned" id="contact">
+    <a class="item" href="https://www.linkedin.com/in/elijahcantu/" target="_blank">
+      <i class="ui icon linkedin"></i>
+      LinkedIn
+    </a>
+    <a class="item" href="mailto:caelijah@umich.edu" target="_blank">
+      <i class="mail icon"></i>
+      E-mail
+    </a>
+    <a class="item" href="https://github.com/uhliejuh/" target="_blank">
+      <i class="github icon"></i>
+      GitHub
+    </a>
+    <div class="item">&copy; 2023 Elijah Cantu</div>
   </footer>
-
 </body>
 
 </html>
