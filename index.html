@@ -61,7 +61,7 @@
     </script>
     <style>
       #left-sidebar-toggle {
-        position: absolute;
+        position: fixed;
         top: 1em;
         left: 1em;
         /* The labels on cards have z-index of 100. The button should appear above them! */
@@ -80,52 +80,42 @@
     </style>
   </head>
 
-  <body >
-    
+  <body>
     <!-- Nav bar on left side -->
-    <div class="ui left vertical inverted sidebar menu icon">
+    <div class="ui inverted top sidebar centered menu" #desktop_sidebar>
       <!-- Internal fragment links -->
-      <div class="item">
-        <div class="menu">
-          <a class="item" href="#tutorials"> Tutorials </a>
-          <a class="item" href="#skills"> Skills </a>
-          <a class="item" href="#courses"> Courses </a>
-        </div>
-      </div>
 
-      <!-- Internal second-level page links -->
-      <div class="item">
-        <div class="menu">
-          <a class="item" href="best_friends"> Best Friends </a>
-        </div>
-      </div>
-      <!-- Internal links -->
+      <a class="item" href="#tutorials"> Tutorials </a>
+      <a class="item" href="#skills"> Skills </a>
+      <a class="item" href="#courses"> Courses </a>
+
+      <a class="item" href="best_friends"> Best Friends </a>
+
+      <a
+        class="item"
+        href="https://www.linkedin.com/in/elijahcantu/"
+        target="_blank"
+        >LinkedIn
+      </a>
+      <a class="item" href="https://github.com/uhliejuh/" target="_blank">
+        Github
+      </a>
+      <a class="item" href="mailto:caelijah@umich.edu" target="_blank">
+        E-Mail
+      </a>
 
       <!-- External links -->
-      <div class="item">
-        <div class="menu">
-          <a
-            class="item"
-            href="https://www.linkedin.com/in/elijahcantu/"
-            target="_blank"
-            >LinkedIn
-          </a>
-          <a class="item" href="https://github.com/uhliejuh/" target="_blank">
-            Github
-          </a>
-          <a class="item" href="mailto:caelijah@umich.edu" target="_blank">
-            E-Mail
-          </a>
-        </div>
-        <!-- External links -->
-      </div>
     </div>
+
     <!-- Nav bar -->
 
-    <div class=" pusher">
-          <button class="ui icon button" id="left-sidebar-toggle">
-      <i class="bars icon"></i>
-    </button>
+    <div class="pusher">
+      <button
+        aria-label="nav bar button"
+        class="ui icon fixed button"
+        id="left-sidebar-toggle">
+        <i class="bars icon"></i>
+      </button>
       <div class="ui container">
         <div class="ui card" id="my_card">
           <img
@@ -875,15 +865,14 @@
       </div>
       <!-- / container -->
 
-    
       <footer class="ui inverted footer segment">
-        <section class="ui center aligned container" >
+        <section class="ui center aligned container">
           <div class="ui inverted divided centered grid">
             <div class="column"></div>
 
             <a
               class="three wide column"
-              style="text-align: center"
+              style="text-align: center; color: #fff"
               href="https://www.linkedin.com/in/elijahcantu/"
               target="_blank">
               <i class="linkedin icon"></i><br />
@@ -892,7 +881,7 @@
 
             <a
               class="three wide column"
-              style="text-align: center"
+              style="text-align: center; color: #fff"
               href="https://github.com/uhliejuh/"
               target="_blank">
               <i class="github icon"></i><br />
@@ -901,7 +890,7 @@
 
             <a
               class="three wide column"
-              style="text-align: center"
+              style="text-align: center; color: #fff"
               href="mailto:caelijah@umich.edu"
               target="_blank">
               <i class="mail icon"></i><br />
@@ -916,31 +905,17 @@
       </footer>
     </div>
 
-
-    <script>
-
-
-     
-        $sidebar = $(".ui.sidebar");
-        
-        $sidebar.sidebar({
-          dimPage: false,
-          
-      
-        });
-        $sidebar.sidebar("attach events", "#left-sidebar-toggle");
-
-       
-      
-
-  
-    </script>
-    <script src="assets/js/swiped-events.min.js" async></script>
     <script>
       $sidebar = $(".ui.sidebar");
-      // detect swipe events to show/hide sidebar.
-      document.addEventListener("swiped-left", () => $sidebar.sidebar("hide"));
-      document.addEventListener("swiped-right", () => $sidebar.sidebar("show"));
+
+      $sidebar.sidebar({
+        dimPage: false,
+
+        transition: "push",
+        mobileTransition: "push",
+      });
+      $sidebar.sidebar("");
+      $sidebar.sidebar("attach events", "#left-sidebar-toggle");
     </script>
   </body>
 </html>
