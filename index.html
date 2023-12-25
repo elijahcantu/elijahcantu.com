@@ -2,17 +2,29 @@
 <html lang="en">
   <head>
     <!-- Site Properties -->
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/headshots/elijah.jpeg" >
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Tutorials on restricting devices for individuals, friends, spouses, children, and/or families." >
+    <meta
+      property="og:description"
+      content="Tutorials on restricting devices for individuals, friends, spouses, children, and/or families." >
+    <meta property="og:title" content="Elijah Cantu" >
+
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="assets/headshots/elijah.jpeg" >
+    <meta name="keywords" content="Elijah Cantu, restrict device" >
+    <meta name="author" content="Elijah Cantu" >
+
     <title>Elijah Cantu</title>
     <link rel="shortcut icon" type="image/x-icon" href="caelijah.jpeg" >
-    <meta name="description" content="Elijah Cantu" >
-    <meta name="keywords" content="caelijah, Elijah Cantu" >
-    <meta name="author" content="Elijah Cantu" >
-    <!-- Standard Meta -->
-    <meta charset="utf-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" >
+
     <!-- Devicon Icons-->
     <link
       rel="stylesheet"
@@ -29,6 +41,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css" >
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -41,59 +54,75 @@
       gtag("js", new Date());
       gtag("config", "G-DLGVFWSJJ3");
     </script>
+    <style>
+      #left-sidebar-toggle {
+        position: fixed;
+        top: 2em;
+        right: 2em;
+        /* The labels on cards have z-index of 100. The button should appear above them! */
+        z-index: 10000;
+      }
+
+      @media only screen and (max-width: 767px) {
+        #my_card {
+          /* Your styles for mobile view */
+          width: 100%; /* Example: make it fluid */
+        }
+      }
+      #my_card {
+        margin-top: 15px;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Main page  -->
+    <button class="ui icon button" id="left-sidebar-toggle">
+      <i class="bars icon"></i>
+    </button>
 
-    <div class="ui text container">
-      <a
-        class="ui right floated icon button"
-        href="https://github.com/uhliejuh/"
-        target="_blank">
-        <i class="github icon"></i> GitHub
-      </a>
-      <a
-        class="ui right floated icon button"
-        href="mailto:caelijah@umich.edu"
-        target="_blank">
-        <i class="ui icon envelope"></i> E-mail
-      </a>
-      <a
-        class="ui right floated icon button"
-        href="https://www.linkedin.com/in/elijahcantu/"
-        target="_blank">
-        <i class="ui icon linkedin"></i> LinkedIn
-      </a>
-      <header>
-        <h1 class="ui header">Elijah Cantu</h1>
-        <p>
-          <img
-            class="ui left floated rounded small image"
-            alt="Elijah Cantu headshot"
-            src="caelijah.jpeg" >
-          I am Elijah Cantu, a junior at the University of Michigan College of
-          Engineering. I am majoring in Computer Science and minoring in User
-          Experience Design. My interests are in full-stack development and
-          educating people on how to reduce their screen time.
-        </p>
-      </header>
+    <div class="ui container">
+      <div class="ui card" id="my_card">
+        <img
+          class="ui image"
+          src="assets/headshots/elijah.jpeg"
+          alt="Elijah Cantu head shot" >
 
-      <!-- Internal links -->
-      <nav class="ui four item menu">
-        <a href="#tutorials" class="item">Tutorials</a>
-        <a href="#skills" class="item">Skills</a>
-        <a href="#courses" class="item">Courses</a>
-        <a href="#contact" class="item">Contact</a>
-      </nav>
+        <div class="content">
+          <h1>Elijah Cantu</h1>
+        </div>
+        <div class="extra content">
+          <span
+            data-tooltip="University&nbsp;of&nbsp;Michigan&nbsp;|&nbsp;Junior
+            College&nbsp;of&nbsp;Engineering&nbsp;|&nbsp;Bachelor&nbsp;of&nbsp;Science&nbsp;in&nbsp;Engineering
+            School&nbsp;of&nbsp;Information&nbsp;|&nbsp;User&nbsp;Experience&nbsp;Design&nbsp;Minor"
+            data-variation="multiline"
+            data-position="top left">
+            <image
+              src="assets/icons/BlockM.svg"
+              width="20px"
+              alt="Block M"></image>
+          </span>
+
+          <a
+            data-tooltip="Learn more about my friends!"
+            data-position="bottom left"
+            href="/friends">
+            <i class="user icon"></i>
+            5 Friends
+          </a>
+        </div>
+
+        <!-- /fluid card -->
+      </div>
+
       <!-- Tutorials section -->
       <section id="tutorials">
-        <h2 class="ui header">Tutorials</h2>
+        <h1>Tutorials</h1>
         <p>
-          Tutorials I have created on restricting devices to manage screen time
-          for individuals, friends, spouses, children, and/or families.
+          How to restrict devices for individuals, friends, spouses, children,
+          and/or families.
         </p>
-        <div class="ui two stackable cards">
+        <div class="ui three stackable cards">
           <div class="ui fluid card">
             <a class="right aligned floating ui label"> In development </a>
 
@@ -249,8 +278,8 @@
 
       <!-- Skills section -->
       <section id="skills">
-        <h2 class="ui header">Skills</h2>
-        <div class="ui two stackable cards">
+        <h1>Skills</h1>
+        <div class="ui three stackable cards">
           <div class="ui fluid card">
             <div class="content">
               <div class="header">Languages</div>
@@ -258,7 +287,7 @@
             <div class="content">
               <a
                 data-tooltip="C++"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
@@ -267,7 +296,7 @@
               </a>
               <a
                 data-tooltip="C"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
@@ -277,7 +306,7 @@
 
               <a
                 data-tooltip="C#"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
@@ -286,7 +315,7 @@
               </a>
               <a
                 data-tooltip="Python"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -295,7 +324,7 @@
               </a>
               <a
                 data-tooltip="HTML"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -304,7 +333,7 @@
               </a>
               <a
                 data-tooltip="CSS"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
@@ -313,7 +342,7 @@
               </a>
               <a
                 data-tooltip="JavaScript"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -322,7 +351,7 @@
               </a>
               <a
                 data-tooltip="Julia"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg"
@@ -331,7 +360,7 @@
               </a>
               <a
                 data-tooltip="MATLAB"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
@@ -348,7 +377,7 @@
             <div class="content">
               <a
                 data-tooltip="VS Code"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
@@ -357,7 +386,7 @@
               </a>
               <a
                 data-tooltip="Visual Studio"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
@@ -366,7 +395,7 @@
               </a>
               <a
                 data-tooltip="Xcode"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
@@ -375,7 +404,7 @@
               </a>
               <a
                 data-tooltip="Android Studio"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
@@ -384,7 +413,7 @@
               </a>
               <a
                 data-tooltip="macOS"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
@@ -393,7 +422,7 @@
               </a>
               <a
                 data-tooltip="Windows"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
@@ -402,7 +431,7 @@
               </a>
               <a
                 data-tooltip="Linux"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
@@ -411,7 +440,7 @@
               </a>
               <a
                 data-tooltip="ChromeOS"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
@@ -420,7 +449,7 @@
               </a>
               <a
                 data-tooltip="IOS"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
@@ -429,7 +458,7 @@
               </a>
               <a
                 data-tooltip="Android"
-                data-variation="mini basic"
+                data-variation="basic"
                 data-position="top left">
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
@@ -445,7 +474,7 @@
       <!-- Courses section -->
       <nav class="ui divider"></nav>
       <section id="courses">
-        <h2 class="ui header">Courses</h2>
+        <h1>Courses</h1>
         <div class="ui three stackable cards">
           <div class="ui card">
             <a
@@ -456,7 +485,7 @@
             </a>
 
             <div class="content">
-              <div class="ui center aligned sub header">Web Systems</div>
+              <div class="ui center aligned header">Web Systems</div>
             </div>
             <div class="content">
               <div class="ui animated list">
@@ -513,9 +542,7 @@
             </a>
 
             <div class="content">
-              <div class="ui center aligned sub header">
-                Computer Organization
-              </div>
+              <div class="ui center aligned header">Computer Organization</div>
             </div>
             <div class="content">
               <div class="ui animated list">
@@ -630,7 +657,7 @@
               EECS 280 | C++
             </a>
             <div class="content">
-              <div class="ui center aligned sub header">
+              <div class="ui center aligned header">
                 Programming and Data Structures
               </div>
             </div>
@@ -688,7 +715,7 @@
               ENGR 101 | MATLAB | C++
             </a>
             <div class="content">
-              <div class="ui center aligned sub header">
+              <div class="ui center aligned header">
                 Computers and Programming
               </div>
             </div>
@@ -760,7 +787,7 @@
             </div>
 
             <div class="content">
-              <div class="ui center aligned sub header">More</div>
+              <div class="ui center aligned header">More</div>
             </div>
             <div class="content">
               <div class="ui small feed">
@@ -812,7 +839,7 @@
       </section>
       <!-- /courses -->
     </div>
-    <!-- /text container -->
+    <!-- / container -->
 
     <!-- Footer with contact information -->
     <footer class="ui inverted segment center aligned" id="contact">
@@ -824,14 +851,7 @@
         <i class="linkedin icon"></i>
         LinkedIn
       </a>
-      <a
-        class="ui icon button"
-        tabindex="0"
-        href="mailto:caelijah@umich.edu"
-        target="_blank">
-        <i class="mail icon"></i>
-        E-mail
-      </a>
+
       <a
         class="ui icon button"
         tabindex="0"
@@ -840,8 +860,83 @@
         <i class="github icon"></i>
         GitHub
       </a>
+
       <div class="ui divider"></div>
       <div class="item">&copy; 2023 Elijah Cantu</div>
     </footer>
+
+    <!-- Nav bar on left side -->
+    <div class="ui left vertical inverted sidebar menu icon">
+      <!-- Internal fragment links -->
+      <div class="item">
+        <div class="menu">
+          <a class="item" href="#tutorials"> Tutorials </a>
+          <a class="item" href="#skills"> Skills </a>
+          <a class="item" href="#courses"> Courses </a>
+          <a class="item" href="#contact"> Contact </a>
+        </div>
+      </div>
+
+      <!-- Internal second-level page links -->
+      <div class="item">
+        <div class="menu">
+          <a class="item" href="friends"> Friends </a>
+        </div>
+      </div>
+      <!-- Internal links -->
+
+      <!-- External links -->
+      <div class="item">
+        <div class="menu">
+          <a
+            class="item"
+            href="https://www.linkedin.com/in/elijahcantu/"
+            target="_blank"
+            >LinkedIn
+          </a>
+          <a class="item" href="https://github.com/uhliejuh/" target="_blank">
+            Github
+          </a>
+          <a class="item" href="mailto:caelijah@umich.edu" target="_blank">
+            E-Mail
+          </a>
+        </div>
+        <!-- External links -->
+      </div>
+    </div>
+    <!-- Nav bar -->
+
+    <script>
+      // Sidebar show and hide logic.
+      //
+      // On large screens, show the sidebar by default.  On small screens, hide it.
+      function isSmallScreen() {
+        return screen.width < 900;
+      }
+
+      function renderSidebar() {
+        $sidebar = $(".ui.sidebar");
+        $sidebar.sidebar({
+          dimPage: false,
+          transition: "overlay",
+          mobileTransition: "overlay",
+          exclusive: false,
+          closable: false,
+        });
+        $sidebar.sidebar("attach events", "#left-sidebar-toggle");
+
+        if (!isSmallScreen()) {
+          $sidebar.sidebar("toggle");
+        }
+      }
+
+      renderSidebar();
+    </script>
+    <script src="assets/js/swiped-events.min.js" async=""></script>
+    <script>
+      // detect swipe events to show/hide sidebar.
+      document.addEventListener("swiped-left", () => $sidebar.sidebar("hide"));
+      document.addEventListener("swiped-right", () => $sidebar.sidebar("show"));
+    </script>
   </body>
 </html>
