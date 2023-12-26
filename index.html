@@ -28,7 +28,10 @@
     <meta name="author" content="Elijah Cantu" />
 
     <title>Elijah Cantu</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assests/images/elijah_and_cow.jpeg" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assests/images/elijah_and_cow.jpeg" />
 
     <!-- Devicon Icons-->
     <link
@@ -60,32 +63,23 @@
       gtag("config", "G-DLGVFWSJJ3");
     </script>
     <style>
-
-
       @media only screen and (max-width: 833px) {
-        #my_card {
-          /* Your styles for mobile view */
-          width: 100%; /* Example: make it fluid */
+        #left-sidebar-toggle {
+          position: fixed;
+          top: 1em;
+          right: 1em;
+          /* The labels on cards have z-index of 100. The button should appear above them! */
+          z-index: 10000;
         }
-              #left-sidebar-toggle {
-        position: fixed;
-        top: 1em;
-        right: 1em;
-        /* The labels on cards have z-index of 100. The button should appear above them! */
-        z-index: 10000;
       }
-      }
-        @media only screen and (min-width: 834px) {
-      #left-sidebar-toggle {
-        position: fixed;
-        top: 1em;
-        left: 1em;
-        /* The labels on cards have z-index of 100. The button should appear above them! */
-        z-index: 10000;
-      }
-      }
-      #my_card {
-        margin-top: 15px;
+      @media only screen and (min-width: 834px) {
+        #left-sidebar-toggle {
+          position: fixed;
+          top: 1em;
+          left: 1em;
+          /* The labels on cards have z-index of 100. The button should appear above them! */
+          z-index: 10000;
+        }
       }
     </style>
   </head>
@@ -102,8 +96,6 @@
 
       <a class="item" href="best_friends"> Best Friends </a>
 
-    
-
       <!-- External links -->
     </div>
 
@@ -117,36 +109,37 @@
         <i class="bars icon"></i>
       </button>
       <div class="ui container">
-        <div class="ui card" id="my_card">
-          <img
-            class="ui image"
-            src="assets/images/elijah_and_cow_full.jpeg"
-            alt="Elijah Cantu head shot" />
+        <div class="ui three stackable cards">
+          <div class="ui card">
+            <img
+              class="ui image"
+              src="assets/images/elijah_and_cow_full.jpeg"
+              alt="Elijah Cantu head shot" />
 
-          <div class="content">
-            <h1>Elijah Cantu</h1>
-          </div>
-          <div class="extra content">
-            <a
-              data-tooltip="Learn more about my best friends!"
-              data-position="bottom left"
-              href="/best_friends">
-              <i class="user icon"></i>
-              7 Best Friends
-            </a>
-            <span
-              data-tooltip="University&nbsp;of&nbsp;Michigan&nbsp;|&nbsp;Junior
+            <div class="content">
+              <h1>Elijah Cantu</h1>
+            </div>
+            <div class="extra content">
+              <a
+                data-tooltip="Learn more about my best friends!"
+                data-position="bottom left"
+                href="/best_friends">
+                <i class="user icon"></i>
+                7 Best Friends
+              </a>
+              <span
+                data-tooltip="University&nbsp;of&nbsp;Michigan&nbsp;|&nbsp;Junior
             College&nbsp;of&nbsp;Engineering&nbsp;|&nbsp;Bachelor&nbsp;of&nbsp;Science&nbsp;in&nbsp;Engineering
             School&nbsp;of&nbsp;Information&nbsp;|&nbsp;User&nbsp;Experience&nbsp;Design&nbsp;Minor"
-              data-variation="multiline"
-              data-position="top left">
-              <image
-                src="assets/images/icons/BlockM.svg"
-                width="20px"
-                alt="Block M"></image>
-            </span>
+                data-variation="multiline"
+                data-position="top left">
+                <image
+                  src="assets/images/icons/BlockM.svg"
+                  width="20px"
+                  alt="Block M"></image>
+              </span>
+            </div>
           </div>
-
           <!-- /fluid card -->
         </div>
 
