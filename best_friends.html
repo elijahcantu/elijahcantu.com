@@ -23,177 +23,212 @@
   </head>
 
   <style>
-    body {
-      padding-top: 10px; /* Adjust the value as needed */
-      margin: 0; /* Remove default margin to ensure full width */
-    }
-  </style>
-
-
-<style>
+    @media only screen and (max-width: 833px) {
       #left-sidebar-toggle {
         position: fixed;
         top: 1em;
-        left: 1em;
+        right: 1em;
         /* The labels on cards have z-index of 100. The button should appear above them! */
         z-index: 10000;
       }
-      </style>
+    }
+    @media only screen and (min-width: 834px) {
+      #left-sidebar-toggle {
+        position: fixed;
+        top: 2em;
+        left: 2em;
+        /* The labels on cards have z-index of 100. The button should appear above them! */
+        z-index: 10000;
+      }
+    }
+  </style>
   <body>
-     <!-- Nav bar on left side -->
+    <!-- Nav bar on left side -->
     <div class="ui inverted top sidebar centered menu">
-
-
       <a class="item" href="/"> Home </a>
-
-     
 
       <!-- External links -->
     </div>
 
     <!-- Nav bar -->
     <div class="pusher">
-       <button
+      <div class="ui horizontal divider"></div>
+
+      <button
         aria-label="nav bar button"
         class="ui icon fixed button"
         id="left-sidebar-toggle">
         <i class="bars icon"></i>
       </button>
-    <div class="ui container">
-      <h1>Best Friends (Under Development)</h1>
-      <p>In reverse alphabetical order to be unbiased.</p>
-      <div class="ui three stackable cards">
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/headshots/temp.png" alt="Syeda Reza head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Syeda Reza</div>
-            <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:syerez@umich.edu" target="_blank"
-                >syerez@umich.edu</a
-              >
-            </div>
-          </div>
-          <div class="extra content"></div>
-        </div>
-        <!-- /fluid card -->
-
-        <div class="ui fluid card">
-          <div class="image">
-            <img
-              src="assets/images/headshots/temp.png"
-              alt="Sushrita Rakshit head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Sushrita Rakshit</div>
-            <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:sushrita@umich.edu" target="_blank"
-                >sushrita@umich.edu</a
-              >
-            </div>
-          </div>
-          <div class="extra content"></div>
-        </div>
-        <!-- /fluid card -->
-
-        <div class="ui fluid card">
-          <div class="image">
-            <img
-              src="assets/images/headshots/temp.png"
-              alt="Mira Panjaitan head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Mira Panjaitan</div>
-            <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:mnauli@umich.edu" target="_blank"
-                >mnauli@umich.edu</a
-              >
-            </div>
-          </div>
-          <div class="extra content"></div>
-        </div>
-        <!-- /fluid card -->
-
-        <!-- BEGIN TAs -->
-        <div class="ui fluid card">
-          <div class="image">
-            <img
-              src="assets/images/headshots/temp.png"
-              alt="Shalini Krish head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Shalini Krish</div>
-            <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:shalinik@umich.edu" target="_blank"
-                >shalinik@umich.edu</a
-              >
-            </div>
-          </div>
-          <div class="extra content"></div>
+      <div class="ui container">
+        <div class="ui breadcrumb">
+          <a style="color: #0000ff" ; href="/" class="section">Home</a>
+          <i class="right arrow icon divider"></i>
+          <div class="active section">Best Friends</div>
         </div>
 
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/headshots/temp.png" alt="Isha Kalwani head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Isha Kalwani</div>
-            <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:ikalwani@umich.edu" target="_blank"
-                >ikalwani@umich.edu</a
-              >
+
+        <h1>Best Friends (Under Development)</h1>
+        <p>In reverse alphabetical order to be unbiased.</p>
+        <div class="ui three stackable cards">
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Syeda Reza head shot" />
             </div>
-          </div>
-          <div class="extra content"></div>
-        </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img
-              src="assets/images/headshots/temp.png"
-              alt="Krystal Green head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Krystal Green</div>
-                       <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:greenk25@msu.edu" target="_blank"
-                >greenk25@msu.edu</a
-              >
+            <div class="content">
+              <div class="header">Syeda Reza</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:syerez@umich.edu"
+                  target="_blank"
+                  >syerez@umich.edu</a
+                >
+              </div>
             </div>
+            <div class="extra content"></div>
           </div>
-          <div class="extra content"></div>
-        </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img
-              src="assets/images/headshots/temp.png"
-              alt="Abyesolome Assefa head shot" />
-          </div>
-          <div class="content">
-            <div class="header">Abyesolome Assefa</div>
-            <div class="description">
-              <i class="icon envelope"></i
-              ><a style="color:#0000ff;" href="mailto:abistech@umich.edu" target="_blank"
-                >abistech@umich.edu</a
-              >
+          <!-- /fluid card -->
+
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Sushrita Rakshit head shot" />
             </div>
+            <div class="content">
+              <div class="header">Sushrita Rakshit</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:sushrita@umich.edu"
+                  target="_blank"
+                  >sushrita@umich.edu</a
+                >
+              </div>
+            </div>
+            <div class="extra content"></div>
           </div>
-          <div class="extra content"></div>
+          <!-- /fluid card -->
+
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Mira Panjaitan head shot" />
+            </div>
+            <div class="content">
+              <div class="header">Mira Panjaitan</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:mnauli@umich.edu"
+                  target="_blank"
+                  >mnauli@umich.edu</a
+                >
+              </div>
+            </div>
+            <div class="extra content"></div>
+          </div>
+          <!-- /fluid card -->
+
+          <!-- BEGIN TAs -->
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Shalini Krish head shot" />
+            </div>
+            <div class="content">
+              <div class="header">Shalini Krish</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:shalinik@umich.edu"
+                  target="_blank"
+                  >shalinik@umich.edu</a
+                >
+              </div>
+            </div>
+            <div class="extra content"></div>
+          </div>
+
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Isha Kalwani head shot" />
+            </div>
+            <div class="content">
+              <div class="header">Isha Kalwani</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:ikalwani@umich.edu"
+                  target="_blank"
+                  >ikalwani@umich.edu</a
+                >
+              </div>
+            </div>
+            <div class="extra content"></div>
+          </div>
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Krystal Green head shot" />
+            </div>
+            <div class="content">
+              <div class="header">Krystal Green</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:greenk25@msu.edu"
+                  target="_blank"
+                  >greenk25@msu.edu</a
+                >
+              </div>
+            </div>
+            <div class="extra content"></div>
+          </div>
+          <div class="ui fluid card">
+            <div class="image">
+              <img
+                src="assets/images/headshots/temp.png"
+                alt="Abyesolome Assefa head shot" />
+            </div>
+            <div class="content">
+              <div class="header">Abyesolome Assefa</div>
+              <div class="description">
+                <i class="icon envelope"></i
+                ><a
+                  style="color: #0000ff"
+                  href="mailto:abistech@umich.edu"
+                  target="_blank"
+                  >abistech@umich.edu</a
+                >
+              </div>
+            </div>
+            <div class="extra content"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <footer class="ui inverted segment center aligned" id="contact">
-      <div class="item">&copy; 2023 Elijah Cantu</div>
-    </footer>
+      <div class="ui horizontal divider"></div>
+
+      <footer class="ui inverted segment center aligned" id="contact">
+        <div class="item">&copy; 2023 Elijah Cantu</div>
+      </footer>
     </div>
 
-     <script>
+    <script>
       $sidebar = $(".ui.sidebar");
 
       $sidebar.sidebar({
@@ -205,6 +240,5 @@
       $sidebar.sidebar("");
       $sidebar.sidebar("attach events", "#left-sidebar-toggle");
     </script>
-    
   </body>
 </html>
