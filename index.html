@@ -60,6 +60,22 @@
       gtag("config", "G-DLGVFWSJJ3");
     </script>
     <style>
+
+
+      @media only screen and (max-width: 833px) {
+        #my_card {
+          /* Your styles for mobile view */
+          width: 100%; /* Example: make it fluid */
+        }
+              #left-sidebar-toggle {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        /* The labels on cards have z-index of 100. The button should appear above them! */
+        z-index: 10000;
+      }
+      }
+        @media only screen and (min-width: 834px) {
       #left-sidebar-toggle {
         position: fixed;
         top: 1em;
@@ -67,12 +83,6 @@
         /* The labels on cards have z-index of 100. The button should appear above them! */
         z-index: 10000;
       }
-
-      @media only screen and (max-width: 767px) {
-        #my_card {
-          /* Your styles for mobile view */
-          width: 100%; /* Example: make it fluid */
-        }
       }
       #my_card {
         margin-top: 15px;
@@ -82,27 +92,17 @@
 
   <body>
     <!-- Nav bar on left side -->
-    <div class="ui inverted top sidebar centered menu">
+    <div class="ui inverted top sidebar centered equal width menu">
       <!-- Internal fragment links -->
 
       <a class="item" href="#tutorials"> Tutorials </a>
       <a class="item" href="#skills"> Skills </a>
       <a class="item" href="#courses"> Courses </a>
+      <a class="item" href="#courses"> Contact </a>
 
       <a class="item" href="best_friends"> Best Friends </a>
 
-      <a
-        class="item"
-        href="https://www.linkedin.com/in/elijahcantu/"
-        target="_blank"
-        >LinkedIn
-      </a>
-      <a class="item" href="https://github.com/uhliejuh/" target="_blank">
-        Github
-      </a>
-      <a class="item" href="mailto:caelijah@umich.edu" target="_blank">
-        E-Mail
-      </a>
+    
 
       <!-- External links -->
     </div>
@@ -862,13 +862,13 @@
       </div>
       <!-- / container -->
 
-      <footer class="ui inverted footer segment">
+      <footer class="ui inverted footer segment" id="contact">
         <section class="ui center aligned container">
           <div class="ui inverted divided centered grid">
             <div class="column"></div>
 
             <a
-              class="three wide column"
+              class="four wide column"
               style="text-align: center; color: #fff"
               href="https://www.linkedin.com/in/elijahcantu/"
               target="_blank">
@@ -877,7 +877,7 @@
             </a>
 
             <a
-              class="three wide column"
+              class="four wide column"
               style="text-align: center; color: #fff"
               href="https://github.com/uhliejuh/"
               target="_blank">
@@ -886,7 +886,7 @@
             </a>
 
             <a
-              class="three wide column"
+              class="four wide column"
               style="text-align: center; color: #fff"
               href="mailto:caelijah@umich.edu"
               target="_blank">

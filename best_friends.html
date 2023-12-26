@@ -29,11 +29,40 @@
     }
   </style>
 
+
+<style>
+      #left-sidebar-toggle {
+        position: fixed;
+        top: 1em;
+        left: 1em;
+        /* The labels on cards have z-index of 100. The button should appear above them! */
+        z-index: 10000;
+      }
+      </style>
   <body>
-    <div class="ui text container">
+     <!-- Nav bar on left side -->
+    <div class="ui inverted top sidebar centered menu">
+
+
+      <a class="item" href="/"> Home </a>
+
+     
+
+      <!-- External links -->
+    </div>
+
+    <!-- Nav bar -->
+    <div class="pusher">
+       <button
+        aria-label="nav bar button"
+        class="ui icon fixed button"
+        id="left-sidebar-toggle">
+        <i class="bars icon"></i>
+      </button>
+    <div class="ui container">
       <h1>Best Friends (Under Development)</h1>
       <p>In reverse alphabetical order to be unbiased.</p>
-      <div class="ui three stackable cards">
+      <div class="ui four stackable cards">
         <div class="ui fluid card">
           <div class="image">
             <img src="assets/headshots/temp.png" alt="Syeda Reza head shot" />
@@ -162,5 +191,20 @@
     <footer class="ui inverted segment center aligned" id="contact">
       <div class="item">&copy; 2023 Elijah Cantu</div>
     </footer>
+    </div>
+
+     <script>
+      $sidebar = $(".ui.sidebar");
+
+      $sidebar.sidebar({
+        dimPage: false,
+
+        transition: "push",
+        mobileTransition: "push",
+      });
+      $sidebar.sidebar("");
+      $sidebar.sidebar("attach events", "#left-sidebar-toggle");
+    </script>
+    
   </body>
 </html>
