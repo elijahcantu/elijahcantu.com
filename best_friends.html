@@ -21,25 +21,13 @@
       href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
   </head>
-
   <style>
-    @media only screen and (max-width: 833px) {
-      #left-sidebar-toggle {
-        position: fixed;
-        top: 1em;
-        right: 1em;
-        /* The labels on cards have z-index of 100. The button should appear above them! */
-        z-index: 10000;
-      }
-    }
-    @media only screen and (min-width: 834px) {
-      #left-sidebar-toggle {
-        position: fixed;
-        top: 2em;
-        left: 2em;
-        /* The labels on cards have z-index of 100. The button should appear above them! */
-        z-index: 10000;
-      }
+    #left-sidebar-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      /* The labels on cards have z-index of 100. The button should appear above them! */
+      z-index: 1;
     }
   </style>
   <body>
@@ -52,7 +40,7 @@
 
     <!-- Nav bar -->
     <div class="pusher">
-      <div class="ui horizontal divider"></div>
+      
 
       <button
         aria-label="nav bar button"
@@ -66,7 +54,6 @@
           <i class="right arrow icon divider"></i>
           <div class="active section">Best Friends</div>
         </div>
-
 
         <h1>Best Friends (Under Development)</h1>
         <p>In reverse alphabetical order to be unbiased.</p>
@@ -224,7 +211,7 @@
       <div class="ui horizontal divider"></div>
 
       <footer class="ui inverted segment center aligned" id="contact">
-        <div class="item">&copy; 2023 Elijah Cantu</div>
+        <div>&copy; 2023 Elijah Cantu</div>
       </footer>
     </div>
 

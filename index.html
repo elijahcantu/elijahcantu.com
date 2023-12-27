@@ -63,23 +63,12 @@
       gtag("config", "G-DLGVFWSJJ3");
     </script>
     <style>
-      @media only screen and (max-width: 833px) {
-        #left-sidebar-toggle {
-          position: fixed;
-          top: 1em;
-          right: 1em;
-          /* The labels on cards have z-index of 100. The button should appear above them! */
-          z-index: 10000;
-        }
-      }
-      @media only screen and (min-width: 834px) {
-        #left-sidebar-toggle {
-          position: fixed;
-          top: 2em;
-          left: 2em;
-          /* The labels on cards have z-index of 100. The button should appear above them! */
-          z-index: 10000;
-        }
+      #left-sidebar-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        /* The labels on cards have z-index of 100. The button should appear above them! */
+        z-index: 1;
       }
     </style>
   </head>
@@ -92,7 +81,6 @@
       <a class="item" href="#tutorials"> Tutorials </a>
       <a class="item" href="#skills"> Skills </a>
       <a class="item" href="#courses"> Courses </a>
-      <a class="item" href="#courses"> Contact </a>
 
       <a class="item" href="best_friends"> Best Friends </a>
 
@@ -102,8 +90,6 @@
     <!-- Nav bar -->
 
     <div class="pusher">
-      <div class="ui horizontal divider"></div>
-
       <button
         aria-label="nav bar button"
         class="ui icon fixed button"
@@ -145,641 +131,598 @@
           </div>
           <!-- /fluid card -->
         </div>
-        <div class="ui horizontal divider"></div>
 
         <!-- Tutorials section -->
-        <section id="tutorials">
-          <h1>Tutorials</h1>
-          <p>
-            How to restrict devices for individuals, friends, spouses, children,
-            and/or families.
-          </p>
-          <div class="ui three stackable cards">
-            <a class="ui raised disabled card">
-              <div class="content">
-                <div class="header">
-                  Mobile
-                  <i class="icon mobile alternate"></i>
-                  <i class="icon tablet alternate"></i>
-                  <i class="icon clock outline"></i>
-                </div>
-              </div>
-            </a>
-            <!-- /fluid card -->
-            <a class="ui disabled raised card">
-              <div class="content">
-                <div class="header">
-                  Desktops
-                  <i class="icon computer"></i>
-                </div>
-              </div>
-            </a>
-            <!-- /fluid card -->
 
-            <a class="ui disabled raised card">
-              <div class="content">
-                <div class="header">
-                  Wi-Fi
-                  <i class="icon wifi"></i>
-                </div>
-              </div>
-            </a>
-            <!-- /fluid card -->
+        <h1 id="tutorials">Tutorials</h1>
 
-            <div class="ui disabled raised card">
-              <div class="content">
-                <div class="header">
-                  Televisions
-                  <i class="icon tv"></i>
-                </div>
+        How to restrict devices for individuals, friends, spouses, children,
+        and/or families.
+
+        <div class="ui three stackable cards">
+          <a class="ui raised disabled card">
+            <div class="content">
+              <div class="header">
+                Mobile
+                <i class="icon mobile alternate"></i>
+                <i class="icon tablet alternate"></i>
+                <i class="icon clock outline"></i>
               </div>
             </div>
-            <!-- /fluid card -->
-
-            <div class="ui disabled raised card">
-              <div class="content">
-                <div class="header">
-                  Gaming
-                  <i class="icon gamepad"></i>
-                </div>
+          </a>
+          <!-- /fluid card -->
+          <a class="ui disabled raised card">
+            <div class="content">
+              <div class="header">
+                Desktops
+                <i class="icon computer"></i>
               </div>
-
-              <!-- /devices -->
             </div>
-            <!-- /fluid card -->
+          </a>
+          <!-- /fluid card -->
+
+          <a class="ui disabled raised card">
+            <div class="content">
+              <div class="header">
+                Wi-Fi
+                <i class="icon wifi"></i>
+              </div>
+            </div>
+          </a>
+          <!-- /fluid card -->
+
+          <div class="ui disabled raised card">
+            <div class="content">
+              <div class="header">
+                Televisions
+                <i class="icon tv"></i>
+              </div>
+            </div>
           </div>
-          <!-- /stackable cards -->
-        </section>
+          <!-- /fluid card -->
+
+          <div class="ui disabled raised card">
+            <div class="content">
+              <div class="header">
+                Gaming
+                <i class="icon gamepad"></i>
+              </div>
+            </div>
+
+            <!-- /devices -->
+          </div>
+          <!-- /fluid card -->
+        </div>
+        <!-- /stackable cards -->
+
         <!-- /tutorials -->
-        <nav class="ui horizontal divider"></nav>
 
-        <!-- Skills section -->
-        <section id="skills">
-          <h1>Skills</h1>
-          <div class="ui three stackable cards">
-            <div class="ui card">
-              <div class="content">
-                <div class="header">Languages</div>
-              </div>
-              <div class="content">
-                <a
-                  data-tooltip="C++"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                    width="25"
-                    alt="C Plus Plus" />
-                </a>
-                <a
-                  data-tooltip="C"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                    width="25"
-                    alt="C" />
-                </a>
-
-                <a
-                  data-tooltip="C#"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                    width="25"
-                    alt="C Sharp" />
-                </a>
-                <a
-                  data-tooltip="Python"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                    width="25"
-                    alt="Python" />
-                </a>
-                <a
-                  data-tooltip="HTML"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                    width="25"
-                    alt="HTML" />
-                </a>
-                <a
-                  data-tooltip="CSS"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                    width="25"
-                    alt="CSS" />
-                </a>
-                <a
-                  data-tooltip="JavaScript"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    width="25"
-                    alt="JavaScript" />
-                </a>
-                <a
-                  data-tooltip="Julia"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg"
-                    width="25"
-                    alt="Julia" />
-                </a>
-                <a
-                  data-tooltip="MATLAB"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
-                    width="25"
-                    alt="MATLAB" />
-                </a>
-              </div>
+        <h1 id="skills">Skills</h1>
+        <div class="ui three stackable cards">
+          <div class="ui card">
+            <div class="content">
+              <div class="header">Languages</div>
             </div>
+            <div class="content">
+              <a
+                data-tooltip="C++"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  width="25"
+                  alt="C Plus Plus" />
+              </a>
+              <a
+                data-tooltip="C"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                  width="25"
+                  alt="C" />
+              </a>
 
-            <div class="ui card">
-              <div class="content">
-                <div class="header">IDEs and OS</div>
-              </div>
-              <div class="content">
-                <a
-                  data-tooltip="VS Code"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                    width="25"
-                    alt="VSCode" />
-                </a>
-                <a
-                  data-tooltip="Visual Studio"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
-                    width="25"
-                    alt="Visual Studio" />
-                </a>
-                <a
-                  data-tooltip="Xcode"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
-                    width="25"
-                    alt="Xcode" />
-                </a>
-                <a
-                  data-tooltip="Android Studio"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
-                    width="25"
-                    alt="Android Studio" />
-                </a>
-                <a
-                  data-tooltip="macOS"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
-                    width="25"
-                    alt="macOS" />
-                </a>
-                <a
-                  data-tooltip="Windows"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
-                    width="25"
-                    alt="Windows" />
-                </a>
-                <a
-                  data-tooltip="Linux"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-                    width="25"
-                    alt="Linux" />
-                </a>
-                <a
-                  data-tooltip="ChromeOS"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
-                    width="25"
-                    alt="ChromeOS" />
-                </a>
-                <a
-                  data-tooltip="IOS"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
-                    width="25"
-                    alt="IOS" />
-                </a>
-                <a
-                  data-tooltip="Android"
-                  data-variation="basic"
-                  data-position="top left">
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
-                    width="25"
-                    alt="Android" />
-                </a>
-              </div>
+              <a
+                data-tooltip="C#"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                  width="25"
+                  alt="C Sharp" />
+              </a>
+              <a
+                data-tooltip="Python"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  width="25"
+                  alt="Python" />
+              </a>
+              <a
+                data-tooltip="HTML"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  width="25"
+                  alt="HTML" />
+              </a>
+              <a
+                data-tooltip="CSS"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  width="25"
+                  alt="CSS" />
+              </a>
+              <a
+                data-tooltip="JavaScript"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="25"
+                  alt="JavaScript" />
+              </a>
+              <a
+                data-tooltip="Julia"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg"
+                  width="25"
+                  alt="Julia" />
+              </a>
+              <a
+                data-tooltip="MATLAB"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
+                  width="25"
+                  alt="MATLAB" />
+              </a>
             </div>
           </div>
-          <!-- /stackable cards -->
-        </section>
+
+          <div class="ui card">
+            <div class="content">
+              <div class="header">IDEs and OS</div>
+            </div>
+            <div class="content">
+              <a
+                data-tooltip="VS Code"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                  width="25"
+                  alt="VSCode" />
+              </a>
+              <a
+                data-tooltip="Visual Studio"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                  width="25"
+                  alt="Visual Studio" />
+              </a>
+              <a
+                data-tooltip="Xcode"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
+                  width="25"
+                  alt="Xcode" />
+              </a>
+              <a
+                data-tooltip="Android Studio"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+                  width="25"
+                  alt="Android Studio" />
+              </a>
+              <a
+                data-tooltip="macOS"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                  width="25"
+                  alt="macOS" />
+              </a>
+              <a
+                data-tooltip="Windows"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+                  width="25"
+                  alt="Windows" />
+              </a>
+              <a
+                data-tooltip="Linux"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                  width="25"
+                  alt="Linux" />
+              </a>
+              <a
+                data-tooltip="ChromeOS"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+                  width="25"
+                  alt="ChromeOS" />
+              </a>
+              <a
+                data-tooltip="IOS"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                  width="25"
+                  alt="IOS" />
+              </a>
+              <a
+                data-tooltip="Android"
+                data-variation="basic"
+                data-position="top left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+                  width="25"
+                  alt="Android" />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- /skills -->
-        <!-- Courses section -->
-        <nav class="ui horizontal divider"></nav>
-        <section id="courses">
-          <h1>Courses</h1>
-          <div class="ui three stackable cards">
-            <div class="ui card">
-              <div class="content">
-                <div class="center aligned header">
-                  <a
-                    style="color: #0000ff"
-                    target="_blank"
-                    href="https://eecs485.org/">
-                    Web Systems | Python
-                  </a>
-                </div>
-              </div>
-              <div class="content">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs485staff.github.io/p5-search-engine/"
-                  >Search Engine</a
-                ><br />
 
+        <h1 id="courses">Courses</h1>
+        <div class="ui three stackable cards">
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header">
                 <a
-                  target="_blank"
                   style="color: #0000ff"
-                  href="https://eecs485staff.github.io/p4-mapreduce/"
-                  >MapReduce</a
-                ><br />
-
-                <a
                   target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs485staff.github.io/p3-insta485-clientside/"
-                  >Client-side Dynamic Pages </a
-                ><br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs485staff.github.io/p2-insta485-serverside/"
-                  >Server-side Dynamic Pages</a
-                ><br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs485staff.github.io/p1-insta485-static/"
-                  >Templated Static Site Generator</a
-                >
-              </div>
-            </div>
-
-            <div class="ui card">
-              <div class="content">
-                <div class="center aligned header">
-                  <a
-                    target="_blank"
-                    style="color: #0000ff"
-                    href="https://eecs370.github.io/">
-                    Computer Organization | C
-                  </a>
-                </div>
-              </div>
-              <div class="content">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs370.github.io/project_4_spec/"
-                  >Data and Memory Cache Simulator</a
-                >
-                <br />
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs370.github.io/project_3_spec"
-                  >Pipelined Datapath Simulator</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs370.github.io/project_2_spec"
-                  >Advanced Assembler and Linker
+                  href="https://eecs485.org/">
+                  Web Systems | Python
                 </a>
-                <br />
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs370.github.io/project_1_spec"
-                  >Assembler, Simulator, and Assembly-Language Multiplication</a
-                >
               </div>
             </div>
+            <div class="content">
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs485staff.github.io/p5-search-engine/"
+                >Search Engine</a
+              ><br />
 
-            <div class="ui card">
-              <div class="content">
-                <div class="center aligned header">
-                  <a
-                    style="color: #0000ff"
-                    target="_blank"
-                    href="https://eecs281staff.github.io/eecs281.org/">
-                    Data Structures and Algorithms | C++
-                  </a>
-                </div>
-              </div>
-              <div class="content">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs281staff.github.io/p4-pokemon"
-                  >Pokemon</a
-                >
-                <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs485staff.github.io/p4-mapreduce/"
+                >MapReduce</a
+              ><br />
 
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs281staff.github.io/p3-sillyql/"
-                  >SillyQL</a
-                >
-                <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs485staff.github.io/p3-insta485-clientside/"
+                >Client-side Dynamic Pages </a
+              ><br />
 
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs281staff.github.io/p2b-priority-queues/"
-                  >Priority Queues
-                </a>
-                <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs485staff.github.io/p2-insta485-serverside/"
+                >Server-side Dynamic Pages</a
+              ><br />
 
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs281staff.github.io/p2-a-new-heap/"
-                  >A New Heap</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs281staff.github.io/p1-back-to-the-ship/"
-                  >Back to the Ship</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs281staff.github.io/p0-statistics/"
-                  >Statistics</a
-                >
-              </div>
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs485staff.github.io/p1-insta485-static/"
+                >Templated Static Site Generator</a
+              >
             </div>
-
-            <div class="ui card">
-              <div class="content">
-                <div class="center aligned header">
-                  <a
-                    style="color: #0000ff"
-                    target="_blank"
-                    href="https://eecs280.org/">
-                    Programming and Data Structures | C++
-                  </a>
-                </div>
-              </div>
-              <div class="content">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs280staff.github.io/p5-ml/"
-                  >Machine Learning</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs280staff.github.io/p4-web/"
-                  >Web</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs280staff.github.io/p3-euchre/"
-                  >Euchre
-                </a>
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs280staff.github.io/p2-cv/"
-                  >Computer Vision</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs280staff.github.io/p1-stats/"
-                  >Couple Statistics</a
-                >
-              </div>
-            </div>
-
-            <div class="ui card">
-              <div class="content">
-                <div class="center aligned header">
-                  <a
-                    style="color: #0000ff"
-                    target="_blank"
-                    href="https://engr101staff.github.io/engr101.org/">
-                    Computers and Programming | MATLAB | C++
-                  </a>
-                </div>
-              </div>
-              <div class="content">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/1hNPw_jp74-eCQVrCpsLeC5SqE3yKg7jI/view?usp=sharing"
-                  >gLyft: Galactic Ride-Sharing</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/16NFfui-oOShH5ksLl1L8U1V6c_NSKleJ/view?usp=sharing"
-                  >Spaceport Reviews</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/1guAiEqmXiD8ZQl7OROO7GdDkEyT_RCCX/view?usp=sharing"
-                  >Space Shuttle Braking Coefficient
-                </a>
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/1IFz56g3GBcTplG-Ien1I6-LJHeerZDpx/view?usp=sharing"
-                  >Siting a Wind Farm</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/1bILbZ33JChzAP3qaVvMDetQB1jRZ6MFz/view?usp=sharing"
-                  >Dealing with Radiation</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/1TxSGXhjLkrM8DxlOFN4n-RZPVvvsGk4d/view?usp=sharing"
-                  >Analyzing a Structure</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://drive.google.com/file/d/1DMOlY535Ug_DuUTUgOlrxyK6Ox8oO7sW/view?usp=sharing"
-                  >Soil Analysis</a
-                >
-              </div>
-            </div>
-
-            <div class="ui card">
-              <div class="content">
-                <div class="center aligned header">
-                  More | Python | HTML | CSS | JavaScript
-                </div>
-              </div>
-              <div class="content">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://www.si.umich.edu/programs/courses/206"
-                  >Data-Oriented Programming</a
-                >
-
-                <br />
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://www.si.umich.edu/programs/courses/339"
-                  >Web Design, Development, and Accessibility</a
-                >
-                <br />
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://www.si.umich.edu/programs/courses/364"
-                  >Building Data-Driven Web Applications</a
-                >
-
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://web.eecs.umich.edu/~weimerw/481/"
-                  >Software Engineering</a
-                >
-                <br />
-
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://atlas.ai.umich.edu/course/EECS%20497/"
-                  >Human-Centered Software</a
-                >
-              </div>
-            </div>
-            <!-- / ui card -->
           </div>
-          <!-- /stackable cards -->
-        </section>
+
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header">
+                <a
+                  target="_blank"
+                  style="color: #0000ff"
+                  href="https://eecs370.github.io/">
+                  Computer Organization | C
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs370.github.io/project_4_spec/"
+                >Data and Memory Cache Simulator</a
+              >
+              <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs370.github.io/project_3_spec"
+                >Pipelined Datapath Simulator</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs370.github.io/project_2_spec"
+                >Advanced Assembler and Linker
+              </a>
+              <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs370.github.io/project_1_spec"
+                >Assembler, Simulator, and Assembly-Language Multiplication</a
+              >
+            </div>
+          </div>
+
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header">
+                <a
+                  style="color: #0000ff"
+                  target="_blank"
+                  href="https://eecs281staff.github.io/eecs281.org/">
+                  Data Structures and Algorithms | C++
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs281staff.github.io/p4-pokemon"
+                >Pokemon</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs281staff.github.io/p3-sillyql/"
+                >SillyQL</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs281staff.github.io/p2b-priority-queues/"
+                >Priority Queues
+              </a>
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs281staff.github.io/p2-a-new-heap/"
+                >A New Heap</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs281staff.github.io/p1-back-to-the-ship/"
+                >Back to the Ship</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs281staff.github.io/p0-statistics/"
+                >Statistics</a
+              >
+            </div>
+          </div>
+
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header">
+                <a
+                  style="color: #0000ff"
+                  target="_blank"
+                  href="https://eecs280.org/">
+                  Programming and Data Structures | C++
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs280staff.github.io/p5-ml/"
+                >Machine Learning</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs280staff.github.io/p4-web/"
+                >Web</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs280staff.github.io/p3-euchre/"
+                >Euchre
+              </a>
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs280staff.github.io/p2-cv/"
+                >Computer Vision</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://eecs280staff.github.io/p1-stats/"
+                >Couple Statistics</a
+              >
+            </div>
+          </div>
+
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header">
+                <a
+                  style="color: #0000ff"
+                  target="_blank"
+                  href="https://engr101staff.github.io/engr101.org/">
+                  Computers and Programming | MATLAB | C++
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/1hNPw_jp74-eCQVrCpsLeC5SqE3yKg7jI/view?usp=sharing"
+                >gLyft: Galactic Ride-Sharing</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/16NFfui-oOShH5ksLl1L8U1V6c_NSKleJ/view?usp=sharing"
+                >Spaceport Reviews</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/1guAiEqmXiD8ZQl7OROO7GdDkEyT_RCCX/view?usp=sharing"
+                >Space Shuttle Braking Coefficient
+              </a>
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/1IFz56g3GBcTplG-Ien1I6-LJHeerZDpx/view?usp=sharing"
+                >Siting a Wind Farm</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/1bILbZ33JChzAP3qaVvMDetQB1jRZ6MFz/view?usp=sharing"
+                >Dealing with Radiation</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/1TxSGXhjLkrM8DxlOFN4n-RZPVvvsGk4d/view?usp=sharing"
+                >Analyzing a Structure</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://drive.google.com/file/d/1DMOlY535Ug_DuUTUgOlrxyK6Ox8oO7sW/view?usp=sharing"
+                >Soil Analysis</a
+              >
+            </div>
+          </div>
+
+          <div class="ui card">
+            <div class="content">
+              <div class="center aligned header">
+                More | Python | HTML | CSS | JavaScript
+              </div>
+            </div>
+            <div class="content">
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://www.si.umich.edu/programs/courses/206"
+                >Data-Oriented Programming</a
+              >
+
+              <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://www.si.umich.edu/programs/courses/339"
+                >Web Design, Development, and Accessibility</a
+              >
+              <br />
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://www.si.umich.edu/programs/courses/364"
+                >Building Data-Driven Web Applications</a
+              >
+
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://web.eecs.umich.edu/~weimerw/481/"
+                >Software Engineering</a
+              >
+              <br />
+
+              <a
+                target="_blank"
+                style="color: #0000ff"
+                href="https://atlas.ai.umich.edu/course/EECS%20497/"
+                >Human-Centered Software</a
+              >
+            </div>
+          </div>
+          <!-- / ui card -->
+        </div>
+        <!-- /stackable cards -->
+
         <!-- /courses -->
       </div>
       <!-- / container -->
-      <div class="ui horizontal divider"></div>
-      <footer class="ui inverted footer segment" id="contact">
-        <section class="ui center aligned very skinny container">
-          <div class="ui inverted divided centered grid">
-            <div class="column"></div>
-
-            <a
-              class="four wide column"
-              style="text-align: center; color: #fff"
-              href="https://www.linkedin.com/in/elijahcantu/"
-              target="_blank">
-              <i class="linkedin icon"></i>
-              LinkedIn
-            </a>
-
-            <a
-              class="four wide column"
-              style="text-align: center; color: #fff"
-              href="https://github.com/uhliejuh/"
-              target="_blank">
-              <i class="github icon"></i>
-              GitHub
-            </a>
-
-            <a
-              class="four wide column"
-              style="text-align: center; color: #fff"
-              href="mailto:caelijah@umich.edu"
-              target="_blank">
-              <i class="mail icon"></i>
-              Email
-            </a>
-
-            <div class="column"></div>
-          </div>
-          <div class="ui horizontal divider"></div>
-          <div>&copy; 2023 Elijah Cantu</div>
-        </section>
+      <footer class="ui inverted segment center aligned" id="contact">
+        <div>&copy; 2023 Elijah Cantu</div>
       </footer>
     </div>
 
