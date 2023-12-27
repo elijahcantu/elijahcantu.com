@@ -65,9 +65,18 @@
     <style>
       #left-sidebar-toggle {
         position: fixed;
-        top:10px;
+        top: 10px;
         right: 10px;
         z-index: 101;
+      }
+      @media only screen and (max-width: 767px) {
+        #info_card {
+          width: 100%; /* Make the body width 100% for small screens */
+        }
+      }
+
+      #info_card {
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -96,47 +105,123 @@
         <i class="bars icon"></i>
       </button>
       <div class="ui container">
-        <div class="ui three stackable cards">
-          <div class="ui card">
-            <img
-              class="ui image"
-              src="assets/images/elijah_and_cow_full.jpeg"
-              alt="Elijah Cantu head shot" />
+        <div class="ui card" id="info_card">
+          <img
+            class="ui image"
+            src="assets/images/elijah_and_cow_full.jpeg"
+            alt="Elijah Cantu head shot" />
 
-            <div class="content">
-              <h1>Elijah Cantu</h1>
-            </div>
-            <div class="extra content">
-              <a
-                data-tooltip="Learn more about my best friends!"
-                data-position="bottom left"
-                href="/best_friends">
-                <i class="user icon"></i>
-                7 Best Friends
-              </a>
-
-              <span
-                data-tooltip="UMich&nbsp;|&nbsp;Junior
-            CoE&nbsp;|&nbsp;BSE&nbsp;CSE
-            UMSI&nbsp;|&nbsp;UX&nbsp;Minor"
-                data-variation="multiline"
-                data-position="bottom left">
-                <image
-                  src="assets/images/icons/BlockM.svg"
-                  width="20px"
-                  alt="Block M"></image>
-              </span>
-            </div>
+          <div class="content">
+            <table>
+              <td>
+                <h1>Elijah Cantu</h1>
+              </td>
+              <td>he/him</td>
+            </table>
           </div>
+          <div class="content">
+            <span
+              data-tooltip="UMich&nbsp;|&nbsp;Junior
+            CoE&nbsp;|&nbsp;BSE&nbsp;CSE
+            UMSI&nbsp;|&nbsp;UX&nbsp;Minor
+            Full&nbsp;Ride&nbsp;Recipient"
+              data-variation="multiline"
+              data-position="top left">
+              <image
+                src="assets/images/icons/BlockM.svg"
+                width="30px"
+                alt="Block M"></image>
+            </span>
+            <span data-tooltip="Southwest Detroit" data-position="top center"
+              ><i class="large icon map marker alternate"></i>
+            </span>
+
+            <span
+              data-tooltip="I do weighted calisthenics"
+              data-position="top center"
+              ><i class="large icon dumbbell"></i>
+            </span>
+
+            <span
+              data-tooltip="I have Guttate Psoriasis"
+              data-position="top center"
+              ><i class="large icon diagnoses"></i>
+            </span>
+            <span
+              data-tooltip="I have a dog named Toby"
+              data-position="top center"
+              ><i class="large icon paw"></i>
+            </span>
+
+            <span
+              data-tooltip="I studied abroad in Prague"
+              data-position="top center"
+              ><i class="large icon globe europe"></i>
+            </span>
+
+            <span
+              data-tooltip="I hiked five mountains in Europe"
+              data-position="top right"
+              ><i class="large icon mountain"></i>
+            </span>
+
+            <span
+              data-tooltip="I love Star Wars (except the sequel trilogy)"
+              data-position="top right"
+              ><i class="large icon rebel"></i>
+            </span>
+          </div>
+          <div class="extra content">
+                        <a
+              style="color: #0000ff"
+              data-tooltip="Learn more about my best friends"
+              data-position="bottom left"
+              href="/best_friends">
+              <i class="large user friends icon"></i>
+              7 Best Friends
+            </a>
+            
+            <a
+              style="color: #0000ff"
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/elijahcantu/"
+              target="_blank"
+              data-tooltip="LinkedIn"
+              data-position="bottom center"
+              ><i class="large icon linkedin"></i>
+            </a>
+            <a
+              style="color: #0000ff"
+              aria-label="GitHub"
+              href="https://github.com/elijahcantu"
+              target="_blank"
+              data-tooltip="GitHub"
+              data-position="bottom center"
+              ><i class="large icon github"></i>
+            </a>
+            <a
+              style="color: #0000ff"
+              aria-label="Email"
+              href="mailto:caelijah@umich.edu"
+              target="_blank"
+              data-tooltip="Email"
+              data-position="bottom center"
+              ><i class="large icon mail"></i>
+            </a>
+
+
+          </div>
+
           <!-- /fluid card -->
         </div>
 
         <!-- Tutorials section -->
 
         <h1 id="tutorials">Tutorials</h1>
-
-        How to restrict devices for individuals, friends, spouses, children,
-        and/or families.
+        <p>
+          How to restrict devices for individuals, friends, spouses, children,
+          and/or families.
+        </p>
 
         <div class="ui three stackable cards">
           <a class="ui raised disabled card">
@@ -153,7 +238,8 @@
           <a class="ui disabled raised card">
             <div class="content">
               <div class="header">
-                Desktops
+                Computers
+                <i class="icon laptop"></i>
                 <i class="icon computer"></i>
               </div>
             </div>
@@ -165,6 +251,7 @@
               <div class="header">
                 Wi-Fi
                 <i class="icon wifi"></i>
+                <i class="laptop house"></i>
               </div>
             </div>
           </a>
@@ -184,7 +271,9 @@
             <div class="content">
               <div class="header">
                 Gaming
-                <i class="icon gamepad"></i>
+                <i class="icon xbox"></i>
+                <i class="icon playstation"></i>
+                <i class="icon steam"></i>
               </div>
             </div>
 
@@ -720,7 +809,7 @@
         <!-- /courses -->
       </div>
       <!-- / container -->
-      <footer class="ui inverted segment center aligned" id="contact">
+      <footer class="ui inverted segment center aligned">
         <div>&copy; 2023 Elijah Cantu</div>
       </footer>
     </div>
