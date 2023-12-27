@@ -2,12 +2,6 @@
 <html lang="en">
   <head>
     <!-- Site Properties -->
-
-    <style>
-      .ui.label {
-        color: #0000ff;
-      }
-    </style>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -82,20 +76,12 @@
   </head>
 
   <body>
-    <!-- Nav bar on left side -->
-    <div class="ui inverted top sidebar centered equal width menu">
-      <!-- Internal fragment links -->
-
+    <div class="ui top sidebar inverted equal width menu">
       <a class="item" href="#tutorials"> Tutorials </a>
       <a class="item" href="#skills"> Skills </a>
       <a class="item" href="#courses"> Courses </a>
-
       <a class="item" href="best_friends"> Best Friends </a>
-
-      <!-- External links -->
     </div>
-
-    <!-- Nav bar -->
 
     <div class="pusher">
       <button
@@ -109,10 +95,10 @@
           <img
             class="ui image"
             src="assets/images/elijah_and_cow_full.jpeg"
-            alt="Elijah Cantu head shot" />
+            alt="Elijah Cantu and a cow" />
 
           <div class="content">
-            <table>
+            <table role="presentation">
               <td>
                 <h1>Elijah Cantu</h1>
               </td>
@@ -171,18 +157,17 @@
               ><i class="large icon rebel"></i>
             </span>
           </div>
+          <!--content-->
           <div class="extra content">
-                        <a
-              style="color: #0000ff"
+            <a
               data-tooltip="Learn more about my best friends"
               data-position="bottom left"
               href="/best_friends">
               <i class="large user friends icon"></i>
               7 Best Friends
             </a>
-            
+
             <a
-              style="color: #0000ff"
               aria-label="LinkedIn"
               href="https://www.linkedin.com/in/elijahcantu/"
               target="_blank"
@@ -191,7 +176,6 @@
               ><i class="large icon linkedin"></i>
             </a>
             <a
-              style="color: #0000ff"
               aria-label="GitHub"
               href="https://github.com/elijahcantu"
               target="_blank"
@@ -200,7 +184,6 @@
               ><i class="large icon github"></i>
             </a>
             <a
-              style="color: #0000ff"
               aria-label="Email"
               href="mailto:caelijah@umich.edu"
               target="_blank"
@@ -208,14 +191,10 @@
               data-position="bottom center"
               ><i class="large icon mail"></i>
             </a>
-
-
           </div>
-
-          <!-- /fluid card -->
+          <!--extra content-->
         </div>
-
-        <!-- Tutorials section -->
+        <!--info card-->
 
         <h1 id="tutorials">Tutorials</h1>
         <p>
@@ -234,7 +213,7 @@
               </div>
             </div>
           </a>
-          <!-- /fluid card -->
+          <!--Mobile-->
           <a class="ui disabled raised card">
             <div class="content">
               <div class="header">
@@ -244,7 +223,7 @@
               </div>
             </div>
           </a>
-          <!-- /fluid card -->
+          <!--Computers-->
 
           <a class="ui disabled raised card">
             <div class="content">
@@ -255,8 +234,7 @@
               </div>
             </div>
           </a>
-          <!-- /fluid card -->
-
+          <!--Wi-Fi-->
           <div class="ui disabled raised card">
             <div class="content">
               <div class="header">
@@ -265,7 +243,7 @@
               </div>
             </div>
           </div>
-          <!-- /fluid card -->
+          <!--Televisions-->
 
           <div class="ui disabled raised card">
             <div class="content">
@@ -276,14 +254,10 @@
                 <i class="icon steam"></i>
               </div>
             </div>
-
-            <!-- /devices -->
           </div>
-          <!-- /fluid card -->
+          <!--Gaming-->
         </div>
-        <!-- /stackable cards -->
-
-        <!-- /tutorials -->
+        <!--tutorial stackable cards-->
 
         <h1 id="skills">Skills</h1>
         <div class="ui three stackable cards">
@@ -475,344 +449,106 @@
             </div>
           </div>
         </div>
-
-        <!-- /skills -->
+        <!--skills stackable cards-->
 
         <h1 id="courses">Courses</h1>
-        <div class="ui three stackable cards">
-          <div class="ui card">
+        <div class="ui five stackable cards">
+          <a class="ui raised card" href="https://eecs485.org/" target="_blank">
+            <div class="ui floating right aligned label">Python</div>
+            <div class="content">
+              <div class="center aligned header">Web Systems</div>
+            </div>
+          </a>
+          <a
+            class="ui raised card"
+            href="https://eecs370.github.io/"
+            target="_blank">
+            <div class="ui floating right aligned label">C</div>
+            <div class="content">
+              <div class="center aligned header">Computer Organization</div>
+            </div>
+          </a>
+
+          <a
+            class="ui raised card"
+            href="https://eecs281staff.github.io/eecs281.org/"
+            target="_blank">
+            <div class="ui floating right aligned label">C++</div>
+
             <div class="content">
               <div class="center aligned header">
-                <a
-                  style="color: #0000ff"
-                  target="_blank"
-                  href="https://eecs485.org/">
-                  Web Systems | Python
-                </a>
+                Data Structures and Algorithms
               </div>
             </div>
+          </a>
+
+          <a class="ui raised card" href="https://eecs280.org/" target="_blank">
+            <div class="ui floating right aligned label">C++</div>
+
             <div class="content">
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs485staff.github.io/p5-search-engine/"
-                >Search Engine</a
-              ><br />
+              <div class="center aligned header">
+                Programming and Data Structures
+              </div>
+            </div>
+          </a>
 
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs485staff.github.io/p4-mapreduce/"
-                >MapReduce</a
-              ><br />
+          <a
+            class="ui raised card"
+            href="https://engr101staff.github.io/engr101.org/"
+            target="_blank">
+            <div class="ui floating right aligned label">MATLAB | C++</div>
 
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs485staff.github.io/p3-insta485-clientside/"
-                >Client-side Dynamic Pages </a
-              ><br />
+            <div class="content">
+              <div class="center aligned header">Computers and Programming</div>
+            </div>
+          </a>
 
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs485staff.github.io/p2-insta485-serverside/"
-                >Server-side Dynamic Pages</a
-              ><br />
+          <div class="ui card">
+            <div class="content">
+              <div class="ui floating right aligned label">Python</div>
 
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs485staff.github.io/p1-insta485-static/"
-                >Templated Static Site Generator</a
-              >
+              <div class="center aligned header">Data-Oriented Programming</div>
             </div>
           </div>
 
           <div class="ui card">
+            <div class="ui floating right aligned label">Python</div>
+
             <div class="content">
               <div class="center aligned header">
-                <a
-                  target="_blank"
-                  style="color: #0000ff"
-                  href="https://eecs370.github.io/">
-                  Computer Organization | C
-                </a>
+                Building Data-Driven Web Applications
               </div>
-            </div>
-            <div class="content">
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs370.github.io/project_4_spec/"
-                >Data and Memory Cache Simulator</a
-              >
-              <br />
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs370.github.io/project_3_spec"
-                >Pipelined Datapath Simulator</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs370.github.io/project_2_spec"
-                >Advanced Assembler and Linker
-              </a>
-              <br />
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs370.github.io/project_1_spec"
-                >Assembler, Simulator, and Assembly-Language Multiplication</a
-              >
             </div>
           </div>
 
           <div class="ui card">
+            <div class="ui floating right aligned label">HTML | CSS | JS</div>
+
             <div class="content">
               <div class="center aligned header">
-                <a
-                  style="color: #0000ff"
-                  target="_blank"
-                  href="https://eecs281staff.github.io/eecs281.org/">
-                  Data Structures and Algorithms | C++
-                </a>
+                Human-Centered Software Design and Development
               </div>
             </div>
-            <div class="content">
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs281staff.github.io/p4-pokemon"
-                >Pokemon</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs281staff.github.io/p3-sillyql/"
-                >SillyQL</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs281staff.github.io/p2b-priority-queues/"
-                >Priority Queues
-              </a>
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs281staff.github.io/p2-a-new-heap/"
-                >A New Heap</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs281staff.github.io/p1-back-to-the-ship/"
-                >Back to the Ship</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs281staff.github.io/p0-statistics/"
-                >Statistics</a
-              >
-            </div>
           </div>
-
           <div class="ui card">
             <div class="content">
+              <div class="ui floating right aligned label">HTML | CSS | JS</div>
+
               <div class="center aligned header">
-                <a
-                  style="color: #0000ff"
-                  target="_blank"
-                  href="https://eecs280.org/">
-                  Programming and Data Structures | C++
-                </a>
+                Web Design, Development, and Accessibility
               </div>
             </div>
-            <div class="content">
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs280staff.github.io/p5-ml/"
-                >Machine Learning</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs280staff.github.io/p4-web/"
-                >Web</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs280staff.github.io/p3-euchre/"
-                >Euchre
-              </a>
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs280staff.github.io/p2-cv/"
-                >Computer Vision</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://eecs280staff.github.io/p1-stats/"
-                >Couple Statistics</a
-              >
-            </div>
           </div>
-
-          <div class="ui card">
-            <div class="content">
-              <div class="center aligned header">
-                <a
-                  style="color: #0000ff"
-                  target="_blank"
-                  href="https://engr101staff.github.io/engr101.org/">
-                  Computers and Programming | MATLAB | C++
-                </a>
-              </div>
-            </div>
-            <div class="content">
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/1hNPw_jp74-eCQVrCpsLeC5SqE3yKg7jI/view?usp=sharing"
-                >gLyft: Galactic Ride-Sharing</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/16NFfui-oOShH5ksLl1L8U1V6c_NSKleJ/view?usp=sharing"
-                >Spaceport Reviews</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/1guAiEqmXiD8ZQl7OROO7GdDkEyT_RCCX/view?usp=sharing"
-                >Space Shuttle Braking Coefficient
-              </a>
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/1IFz56g3GBcTplG-Ien1I6-LJHeerZDpx/view?usp=sharing"
-                >Siting a Wind Farm</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/1bILbZ33JChzAP3qaVvMDetQB1jRZ6MFz/view?usp=sharing"
-                >Dealing with Radiation</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/1TxSGXhjLkrM8DxlOFN4n-RZPVvvsGk4d/view?usp=sharing"
-                >Analyzing a Structure</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://drive.google.com/file/d/1DMOlY535Ug_DuUTUgOlrxyK6Ox8oO7sW/view?usp=sharing"
-                >Soil Analysis</a
-              >
-            </div>
-          </div>
-
-          <div class="ui card">
-            <div class="content">
-              <div class="center aligned header">
-                More | Python | HTML | CSS | JavaScript
-              </div>
-            </div>
-            <div class="content">
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://www.si.umich.edu/programs/courses/206"
-                >Data-Oriented Programming</a
-              >
-
-              <br />
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://www.si.umich.edu/programs/courses/339"
-                >Web Design, Development, and Accessibility</a
-              >
-              <br />
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://www.si.umich.edu/programs/courses/364"
-                >Building Data-Driven Web Applications</a
-              >
-
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://web.eecs.umich.edu/~weimerw/481/"
-                >Software Engineering</a
-              >
-              <br />
-
-              <a
-                target="_blank"
-                style="color: #0000ff"
-                href="https://atlas.ai.umich.edu/course/EECS%20497/"
-                >Human-Centered Software</a
-              >
-            </div>
-          </div>
-          <!-- / ui card -->
         </div>
-        <!-- /stackable cards -->
-
-        <!-- /courses -->
+        <!--courses stackable cards-->
       </div>
-      <!-- / container -->
+      <!--page ui container-->
+
       <footer class="ui inverted segment center aligned">
         <div>&copy; 2023 Elijah Cantu</div>
       </footer>
     </div>
+    <!--pusher-->
 
     <script>
       $sidebar = $(".ui.sidebar");
