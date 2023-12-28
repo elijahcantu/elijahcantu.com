@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+        <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/mira.png" />
+      
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijah's BFFs</title>
+    <!-- Devicon Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <!-- Fomantic UI CSS library -->
+    <!-- https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/reset.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  </head>
+  <style>
+    #left-sidebar-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 101;
+    }
+    #breadcrumbs {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="ui top sidebar inverted equal width menu">
+      <a class="ui item mini disabled button" href="/"> Home </a>
+    </div>
+    <div class="pusher">
+      <button
+        aria-label="nav bar button"
+        class="ui icon fixed button"
+        id="left-sidebar-toggle">
+        <i class="bars icon"></i>
+      </button>
+      <div class="ui container">
+        <div class="ui breadcrumb" id="breadcrumbs">
+          <a style="color: #0000ff" ; href="/" class="section">Home</a>
+          <i class="right arrow icon divider"></i>
+          <div class="active section">BFFs</div>
+        </div>
+
+        <p>In reverse alphabetical order to be unbiased.</p>
+
+        <div class="ui three doubling stackable cards">
+          <div class="ui syeda basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="ui image">
+                    <img
+                      src="assets/images/headshots/syeda.jpg"
+                      alt="Syeda Reza head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Syeda Reza</div>
+                  </div>
+                  <div class="ui equal width mini menu">
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="LinkedIn"
+                        href="https://www.linkedin.com/in/syeda-reza-b79b1825b/"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="GitHub"
+                        href="https://github.com/sy3da"
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:syerez@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button syeda">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /syeda shape  -->
+
+          <div class="ui sushrita basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img
+                      src="assets/images/headshots/sushrita.jpg"
+                      alt="Sushrita Rakshit head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Sushrita Rakshit</div>
+                  </div>
+                  <div class="ui equal width mini menu">
+                    <div class="ui item mini  button">
+                      <a
+                        aria-label="LinkedIn"
+                        href="https://www.linkedin.com/in/sushrita-rakshit-036611227/"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini disabled button">
+                      <a aria-label="GitHub" href="" target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:sushrita@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button sushrita">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /sushrita shape  -->
+
+          <div class="ui mira basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img
+                      src="assets/images/headshots/mira.jpg"
+                      alt="Mira Panjaitan head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Mira Panjaitan</div>
+                  </div>
+                  <div class="ui equal width mini menu">
+                    <div class="ui item mini  button">
+                      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/mira-panjaitan" target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini disabled button">
+                      <a aria-label="GitHub" href="" target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button mira">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /mira shape  -->
+
+          <div class="ui shalini basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img
+                      src="assets/images/headshots/shalini.jpg"
+                      alt="Shalini head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Shalini Krish</div>
+                  </div>
+                  <div class="ui equal width mini menu">
+                    <div class="ui item mini  button">
+                      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/shalini-krish" target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini disabled button">
+                      <a aria-label="GitHub" href="" target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:shalinik@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button shalini">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /shalini shape  -->
+
+          <div class="ui isha basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img
+                      src="assets/images/headshots/isha.jpg"
+                      alt="Isha Kalwani head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Isha Kalwani</div>
+                  </div>
+                  <div class="ui equal width mini menu">
+                    <div class="ui item mini  button">
+                      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/isha-kalwani-269419261/" target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini disabled button">
+                      <a aria-label="GitHub" href="" target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:ikalwani@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button isha">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /isha shape  -->
+
+          <div class="ui krystal basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img
+                      src="assets/images/headshots/temp.jpeg"
+                      alt="Krystal Green head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Krystal Green</div>
+                  </div>
+                  <div class="ui equal width menu">
+                    <div class="ui item mini disabled button">
+                      <a aria-label="LinkedIn" href="" target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:greenk25@msu.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button krystal">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /krystal shape  -->
+
+          <div class="ui abys basic shape card">
+            <div class="sides">
+              <div class="side active">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img
+                      src="assets/images/headshots/temp.jpeg"
+                      alt="Abyesolome Assefa head shot" />
+                  </div>
+                  <div class="content">
+                    <div class="header">Abyesolome Assefa</div>
+                  </div>
+                  <div class="ui equal width mini menu">
+                    <div class="ui item mini  button">
+                      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/abyesolome-assefa-11058325b/" target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                    </div>
+                    <div class="ui item mini disabled button">
+                      <a aria-label="GitHub" href="" target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                    </div>
+                    <div class="ui item mini button">
+                      <a
+                        aria-label="Email"
+                        href="mailto:abistech@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                    </div>
+                    <div class="item mini disabled button abys">
+                      <i class="right arrow right icon"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!--side active-->
+              <div class="side"></div>
+            </div>
+            <!-- sides-->
+          </div>
+          <!-- /abys shape  -->
+        </div>
+        <!-- three card grid-->
+      </div>
+      <!-- ui container-->
+      <footer class="ui inverted segment center aligned">
+        <div>&copy; 2023 Elijah Cantu</div>
+      </footer>
+    </div>
+    <!--pusher-->
+    <script>
+      $sidebar = $(".ui.sidebar");
+
+      $sidebar.sidebar({
+        dimPage: false,
+
+        transition: "push",
+        mobileTransition: "push",
+      });
+      $sidebar.sidebar("");
+      $sidebar.sidebar("attach events", "#left-sidebar-toggle");
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".syeda.button").on("click", function () {
+          $(".syeda.shape").shape("flip right");
+        });
+      });
+    </script>
+  </body>
+</html>
