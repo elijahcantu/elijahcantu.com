@@ -53,7 +53,7 @@
       gtag("config", "G-DLGVFWSJJ3");
     </script>
     <style>
-      #left-sidebar-toggle {
+      #nav_bar_button {
         position: fixed;
         top: 10px;
         right: 10px;
@@ -83,7 +83,7 @@
       <button
         aria-label="nav bar button"
         class="ui icon fixed button"
-        id="left-sidebar-toggle">
+        id="nav_bar_button">
         <i class="bars icon"></i>
       </button>
       <div class="ui container">
@@ -532,16 +532,13 @@
     <!--pusher-->
 
     <script>
-      $sidebar = $(".ui.sidebar");
-
-      $sidebar.sidebar({
+      $nav_bar = $(".ui.sidebar");
+      $nav_bar.sidebar({
         dimPage: false,
-
         transition: "push",
         mobileTransition: "push",
-      });
-      $sidebar.sidebar("");
-      $sidebar.sidebar("attach events", "#left-sidebar-toggle");
+      },);
+      $nav_bar.sidebar("attach events", "#nav_bar_button");
     </script>
   </body>
 </html>
