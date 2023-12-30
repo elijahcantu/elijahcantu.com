@@ -42,7 +42,7 @@
   </style>
   <body>
     <div class="ui top sidebar inverted equal width menu">
-      <a class="ui item mini disabled button" href="/"> Home </a>
+      <a class="item" href="/"> Home </a>
     </div>
     <div class="pusher">
       <button
@@ -51,6 +51,7 @@
         id="nav_bar_button">
         <i class="bars icon"></i>
       </button>
+
       <div class="ui container">
         <div class="ui breadcrumb" id="breadcrumbs">
           <a style="color: #0000ff" href="/" class="section">Home</a>
@@ -61,52 +62,50 @@
           <div class="ui basic card">
             <div class="ui abys shape">
               <div class="sides">
-                <div class="side active">
+                <div class="active side">
                   <div class="ui fluid card">
                     <img
                       class="ui image"
                       src="assets/images/headshots/temp.jpeg"
                       alt="Abyesolome Assefa head shot" />
-
-                    <div class="content">
+                    <div class="content header">
                       <div class="header">Abyesolome Assefa</div>
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/abyesolome-assefa-11058325b/"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:abistech@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini disabled button abys">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/abyesolome-assefa-11058325b/"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:abistech@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div class="item ui button disabled mini" id="abys_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
-                <!--side active-->
+                <!--active side-->
                 <div class="side"></div>
               </div>
               <!-- sides-->
@@ -114,11 +113,10 @@
             <!-- /abys shape  -->
           </div>
           <!--abys-->
-          
           <div class="ui basic card">
             <div class="ui isha shape">
               <div class="sides">
-                <div class="side active">
+                <div class="active side">
                   <div class="ui fluid card">
                     <img
                       class="ui image"
@@ -128,41 +126,39 @@
                       <div class="header">Isha Kalwani</div>
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/isha-kalwani-269419261/"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:ikalwani@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini disabled button isha">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/isha-kalwani-269419261/"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:ikalwani@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                      <div class="item ui button disabled mini" id="isha_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
-                <!--side active-->
+                <!--active side-->
                 <div class="side"></div>
               </div>
               <!-- sides-->
@@ -173,7 +169,7 @@
           <div class="ui basic card">
             <div class="ui shalini shape">
               <div class="sides">
-                <div class="side active">
+                <div class="active side">
                   <div class="ui fluid card">
                     <img
                       class="ui image"
@@ -183,41 +179,41 @@
                       <div class="header">Shalini Krish</div>
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/shalini-krish"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:shalinik@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini disabled button shalini">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/shalini-krish"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:shalinik@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                      <div
+                        class="item ui button disabled mini"
+                        id="shalini_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
-                <!--side active-->
+                <!--active side-->
                 <div class="side"></div>
               </div>
               <!-- sides-->
@@ -228,7 +224,7 @@
           <div class="ui basic card">
             <div class="ui mira shape">
               <div class="sides">
-                <div class="side active">
+                <div class="active side">
                   <div class="ui fluid card">
                     <img
                       class="ui image"
@@ -238,41 +234,39 @@
                       <div class="header">Mira Panjaitan</div>
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
-                <!--side active-->
+                <!--active side-->
                 <div class="side">
                   <div class="ui fluid card">
                     <img
@@ -283,34 +277,32 @@
                       Grammy Mira being an IA after Kaitlyn's OH ended
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
@@ -327,34 +319,32 @@
                       Grammy Mira doing origami before Kaitlyn's OH
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item mini"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn </a
+                      ><a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
@@ -369,34 +359,33 @@
                       alt="Mira Panjaitan head shot" />
                     <div class="content">Doing cardio with Grammy Mira</div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
@@ -411,34 +400,32 @@
                       alt="Mira Panjaitan head shot" />
                     <div class="content">Walking Grammy Mira home</div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
@@ -452,34 +439,33 @@
                       alt="Mira Panjaitan head shot" />
                     <div class="content">Grammy Mira all bundled up</div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
@@ -493,34 +479,33 @@
                       alt="Mira Panjaitan head shot" />
                     <div class="content">Grammy Mira petting Wilbert</div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/mira-panjaitan"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:mnauli@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini button mira">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/mira-panjaitan"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:mnauli@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div class="item mira_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
@@ -535,7 +520,7 @@
           <div class="ui basic card">
             <div class="ui sushrita shape">
               <div class="sides">
-                <div class="side active">
+                <div class="active side">
                   <div class="ui fluid card">
                     <img
                       class="ui image"
@@ -545,41 +530,42 @@
                       <div class="header">Sushrita Rakshit</div>
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/sushrita-rakshit-036611227/"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini disabled button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href=""
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:sushrita@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini disabled button sushrita">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/sushrita-rakshit-036611227/"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="ui item mini disabled button"
+                        tabindex="-1"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href=""
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:sushrita@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div
+                        class="item ui button disabled mini"
+                        id="sushi_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
-                <!--side active-->
+                <!--active side-->
                 <div class="side"></div>
               </div>
               <!-- sides-->
@@ -591,7 +577,7 @@
           <div class="ui basic card">
             <div class="ui syeda shape">
               <div class="sides">
-                <div class="side active">
+                <div class="active side">
                   <div class="ui fluid card">
                     <img
                       class="ui image"
@@ -602,41 +588,41 @@
                       <div class="header">Syeda Reza</div>
                     </div>
                     <div class="ui equal width mini menu">
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="LinkedIn"
-                          style="color: #0000ff"
-                          href="https://www.linkedin.com/in/syeda-reza-b79b1825b/"
-                          target="_blank"
-                          ><i class="large icon linkedin"></i>LinkedIn
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="GitHub"
-                          style="color: #0000ff"
-                          href="https://github.com/sy3da"
-                          target="_blank"
-                          ><i class="large icon github"></i>GitHub
-                        </a>
-                      </div>
-                      <div class="ui item mini button">
-                        <a
-                          aria-label="Email"
-                          style="color: #0000ff"
-                          href="mailto:syerez@umich.edu"
-                          target="_blank"
-                          ><i class="large icon mail"></i>Email
-                        </a>
-                      </div>
-                      <div class="item mini disabled button syeda">
+                      <a
+                        class="item"
+                        aria-label="LinkedIn"
+                        style="color: #0000ff"
+                        href="https://www.linkedin.com/in/syeda-reza-b79b1825b/"
+                        target="_blank"
+                        ><i class="large icon linkedin"></i>LinkedIn
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="GitHub"
+                        style="color: #0000ff"
+                        href="https://github.com/sy3da"
+                        target="_blank"
+                        ><i class="large icon github"></i>GitHub
+                      </a>
+                      <a
+                        class="item"
+                        aria-label="Email"
+                        style="color: #0000ff"
+                        href="mailto:syerez@umich.edu"
+                        target="_blank"
+                        ><i class="large icon mail"></i>Email
+                      </a>
+
+                      <div
+                        class="item ui button disabled mini"
+                        id="syeda_arrow">
                         <i class="right arrow right icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
-                <!--side active-->
+                <!--active side-->
                 <div class="side"></div>
               </div>
               <!-- sides-->
@@ -666,12 +652,7 @@
     </script>
     <script>
       $(document).ready(function () {
-        $(".syeda.button").on("click", function () {
-          $(".syeda.shape").shape("flip right");
-        });
-      });
-      $(document).ready(function () {
-        $(".mira.button").on("click", function () {
+        $(".mira_arrow").on("click", function () {
           $(".mira.shape").shape("flip right");
         });
       });
