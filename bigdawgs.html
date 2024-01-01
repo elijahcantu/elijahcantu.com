@@ -4,7 +4,7 @@
     <link
       rel="shortcut large icon"
       type="image/x-large icon"
-      href="assets/images/mira/mira.png" />
+      href="assets/images/mira/emo.jpg" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,7 +96,7 @@
                       </a>
 
                       <div class="item ui button disabled mini" id="abys_arrow">
-                        <i class="right arrow right large icon"></i>
+                        <i class="right arrow large icon"></i>
                       </div>
                     </div>
                   </div>
@@ -146,7 +146,7 @@
                         ><i class="mail large icon"></i>
                       </a>
                       <div class="item mira_arrow">
-                        <i class="right arrow right large icon"></i>
+                        <i class="right arrow large icon"></i>
                       </div>
                     </div>
                   </div>
@@ -304,17 +304,31 @@
                         ><i class="mail large icon"></i>
                       </a>
 
-                      <div
-                        class="item ui button disabled mini"
-                        id="syeda_arrow">
-                        <i class="right arrow right large icon"></i>
+                      <div class="item syeda_arrow">
+                        <i class="right arrow large icon"></i>
                       </div>
                     </div>
                   </div>
                   <!-- / card -->
                 </div>
                 <!--active side-->
-                <div class="side"></div>
+                <div class="side">
+                  <div class="ui fluid raised card">
+                    <img
+                      class="ui image"
+                      src="assets/images/syeda/bsa.jpg"
+                      alt="Mira Panjaitan head shot" />
+                    <div class="content">
+                      goofy ahh photo shoot with Syeda at her BSA event
+                    </div>
+                    <div class="ui mini menu">
+                      <div class="item syeda_arrow">
+                        <i class="right arrow large icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--side-->
               </div>
               <!-- sides-->
             </div>
@@ -360,7 +374,7 @@
                       <div
                         class="item ui button disabled mini"
                         id="shalini_arrow">
-                        <i class="right arrow right large icon"></i>
+                        <i class="right arrow large icon"></i>
                       </div>
                     </div>
                   </div>
@@ -410,7 +424,7 @@
                         ><i class="mail large icon"></i>
                       </a>
                       <div class="item ui button disabled mini" id="isha_arrow">
-                        <i class="right arrow right large icon"></i>
+                        <i class="right arrow large icon"></i>
                       </div>
                     </div>
                   </div>
@@ -463,7 +477,7 @@
                       <div
                         class="item ui button disabled mini"
                         id="sushi_arrow">
-                        <i class="right arrow right large icon"></i>
+                        <i class="right arrow large icon"></i>
                       </div>
                     </div>
                   </div>
@@ -505,9 +519,11 @@
         $(".abys_arrow").on("click", function () {
           $(".abys.shape").shape("flip left");
         });
-      });
 
-      
+        $(".syeda_arrow").on("click", function () {
+          $(".syeda.shape").shape("flip left");
+        });
+      });
     </script>
   </body>
 </html>
