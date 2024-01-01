@@ -60,12 +60,11 @@
         z-index: 101;
       }
       @media only screen and (max-width: 767px) {
-        #info_card {
+        .side .card {
           width: 100%; /* Make the body width 100% for small screens */
         }
       }
-
-      #info_card {
+      .shape {
         margin-top: 10px;
       }
     </style>
@@ -87,8 +86,8 @@
         <i class="bars icon"></i>
       </button>
       <div class="ui container">
-        <div class="ui shape" id="info_card">
-          <div class="sides">
+        <div class="ui shape">
+          <div class="fluid sides">
             <div class="active side">
               <div class="ui raised card">
                 <img
