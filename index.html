@@ -52,7 +52,13 @@
       gtag("js", new Date());
       gtag("config", "G-DLGVFWSJJ3");
     </script>
+
     <style>
+          @media only screen and (max-width: 767px) {
+    #my_info {
+        width: 100%;
+    }
+}
       .company {
         font-size: 1.5em; /* Adjust the font size as needed */
       }
@@ -95,7 +101,7 @@
       </button>
 
       <div class="ui container">
-        <div class="ui card">
+        <div class="ui card" id="my_info">
           <img
             class="ui image"
             src="assets/images/me/header.jpg"
@@ -764,10 +770,6 @@
       $nav_bar.sidebar("attach events", "#nav_bar_button");
     </script>
 
-    <script>
-      $(".elijah_arrow").on("click", function () {
-        $(".ui.shape").shape("flip right");
-      });
-    </script>
+
   </body>
 </html>
