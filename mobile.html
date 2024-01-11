@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile</title>
+
+    <!-- Fomantic UI CSS library -->
+    <!-- https://fomantic-ui.com/introduction/getting-started.html#using-a-cdn-provider -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/reset.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+  </head>
+  <style>
+    #nav_bar_button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 101;
+    }
+
+    #page_nav {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 101;
+    }
+    #breadcrumbs {
+      margin-top: 10px;
+    }
+
+    #page_nav {
+      display: none; /* Hide the element by default */
+    }
+
+    /* Media query for desktop screens */
+    @media only screen and (min-width: 884px) {
+      #page_nav {
+        display: block; /* Show the element on desktop screens */
+      }
+    }
+  </style>
+  <body>
+    <div class="ui top sidebar inverted equal width menu">
+      <a class="item" href="/"> Home </a>
+    </div>
+    <div class="pusher">
+      <button
+        aria-label="nav bar button"
+        class="ui icon fixed button"
+        id="nav_bar_button">
+        <i class="bars icon"></i>
+      </button>
+
+      <div id="page_nav" style="top: 50px; right: 50px">
+        <p class="ui header" style="font-size: 14px">On this page</p>
+        <div class="ui fluid pointing secondary vertical accordion menu">
+          <div class="item">
+            <a class="title" href="#intro">Intro</a>
+            <div class="active content menu">
+              <a class="item" href="#intro1">intro1 </a
+              ><a class="item" href="#intro2">intro2</a
+              ><a class="item" href="#intro3">intro3</a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="title" href="#setup">Setup</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui text container">
+        <div class="ui fluid floating card">
+          <div class="content">
+            <div id="intro" class="section">
+              <h2>Intro Section</h2>
+              <!-- Your content for Intro section -->
+            </div>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <div id="intro1" class="section">
+              <h2>intro1</h2>
+              <!-- Your content for Setup section -->
+            </div>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <!-- Repeating the word "repeated" 100 times -->
+
+            <div id="intro2" class="section">
+              <h2>intro2</h2>
+              <!-- Your content for Setup section -->
+            </div>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <div id="intro3" class="section">
+              <h2>intro3</h2>
+              <!-- Your content for Setup section -->
+            </div>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <div id="setup" class="section">
+              <h2>setup Section</h2>
+              <!-- Your content for Setup section -->
+            </div>
+
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+            <p>
+              <!-- Repeating the word "repeated" 100 times -->
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated repeated
+              repeated repeated repeated repeated repeated repeated
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $navbar = $(".ui.sidebar");
+
+      $navbar.sidebar({
+        dimPage: false,
+
+        transition: "push",
+        mobileTransition: "push",
+      });
+      $navbar.sidebar("attach events", "#nav_bar_button");
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Cache the accordion menu items
+        var accordionItems = $("#page_nav .item");
+        var subSectionMenus = accordionItems.find(".content");
+
+        // Add scroll event listener
+        $(window).on("scroll", function () {
+          // Get the current scroll position
+          var scrollPosition = $(this).scrollTop();
+          var windowHeight = $(this).height();
+
+          // Iterate through accordion items
+          accordionItems.each(function () {
+            // Get the href attribute value
+            var targetHref = $(this).find("a.title").attr("href");
+            var subSectionMenu = $(this).find(".content");
+
+            // Get the target element based on the href
+            var targetElement = $(targetHref);
+
+            // Check if the target element is in view
+            if (
+              targetElement.length &&
+              targetElement.offset().top <= scrollPosition + windowHeight * 0.05
+            ) {
+              // Remove the 'active' class from all items and their content menus
+              accordionItems.removeClass("active");
+
+              // Add the 'active' class to the current item and its content menu
+              $(this).addClass("active");
+
+              var subSectionAccordionItems = subSectionMenu.find(".item");
+
+              subSectionAccordionItems.each(function () {
+                // Get the href attribute value
+                var subtargetHref = $(this).attr("href");
+
+                // Get the target element based on the href
+                var subtargetElement = $(subtargetHref);
+
+                // Check if the target element is in view
+                if (
+                  subtargetElement.offset().top <=
+                  scrollPosition + windowHeight * 0.05
+                ) {
+                  // Remove the 'active' class from all items and their content menus
+                  subSectionAccordionItems.removeClass("active");
+
+                  // Add the 'active' class to the current item and its content menu
+                  $(this).addClass("active");
+                }
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all anchor links inside the accordion menu
+        var links = document.querySelectorAll("#page_nav .accordion.menu a");
+
+        // Add click event listeners to each link
+        links.forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor link
+
+            // Get the target element based on the href attribute
+            var targetId = link.getAttribute("href").substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            // Scroll to the target element smoothly
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
