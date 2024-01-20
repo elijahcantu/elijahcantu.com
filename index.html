@@ -54,19 +54,10 @@
     </script>
 
     <style>
-          @media only screen and (max-width: 767px) {
-    #my_info {
-        width: 100%;
-    }
-}
-      .company {
-        font-size: 1.5em; /* Adjust the font size as needed */
-      }
-      .alignleft {
-        float: left;
-      }
-      .alignright {
-        float: right;
+      @media only screen and (max-width: 767px) {
+        #my_info {
+          width: 100%;
+        }
       }
 
       #nav_bar_button {
@@ -74,10 +65,6 @@
         top: 10px;
         right: 10px;
         z-index: 101;
-      }
-
-      .container {
-        margin-top: 10px;
       }
     </style>
   </head>
@@ -88,7 +75,6 @@
       <a class="item" href="#skills"> Skills </a>
       <a class="item" href="#projects"> Projects </a>
       <a class="item" href="#experience"> Experience </a>
-      <a class="item" href="#courses"> Courses </a>
       <a class="item" href="bigdawgs"> Big Dawgs </a>
     </div>
 
@@ -472,8 +458,8 @@
             class="ui raised card"
             href="https://eecs485staff.github.io/p5-search-engine/"
             target="_blank">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="center aligned content">
+            <div class="ui bottom floating right aligned label">Python</div>
+            <div class="content">
               <div class="header">Search Engine</div>
               <div class="description">
                 A scalable search engine similar to Google or Bing
@@ -485,8 +471,8 @@
             class="ui raised card"
             href="https://eecs485staff.github.io/p4-mapreduce/"
             target="_blank">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="center aligned content">
+            <div class="ui bottom floating right aligned label">Python</div>
+            <div class="content">
               <div class="header">MapReduce</div>
               <div class="description">
                 A single machine, multi-process, multi-threaded server that
@@ -499,8 +485,8 @@
             class="ui raised card"
             href="https://eecs485staff.github.io/p3-insta485-clientside/"
             target="_blank">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="center aligned content">
+            <div class="ui bottom floating right aligned label">Python</div>
+            <div class="content">
               <div class="header">Client-side Dynamic Pages</div>
               <div class="description">
                 An Instagram clone implemented with client-side dynamic pages
@@ -512,8 +498,8 @@
             class="ui raised card"
             href="https://eecs485staff.github.io/p2-insta485-serverside/"
             target="_blank">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="center aligned content">
+            <div class="ui bottom floating right aligned label">Python</div>
+            <div class="content">
               <div class="header">Server-side Dynamic Pages</div>
               <div class="description">
                 An Instagram clone implemented with server-side dynamic pages
@@ -525,8 +511,10 @@
             class="ui raised card"
             href="https://eecs485staff.github.io/p1-insta485-static/"
             target="_blank">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="center aligned content">
+            <div class="ui bottom floating right aligned label">
+              Python + HTML + Bash + JSON + Jinja2
+            </div>
+            <div class="content">
               <div class="header">Templated Static Site Generator</div>
               <div class="description">
                 An Instagram clone implemented with a templated static site
@@ -539,54 +527,26 @@
 
         <h1 id="experience">Experience</h1>
 
-        <div class="ui two stackable cards">
+        <div class="ui three stackable cards">
           <div class="ui card">
             <div class="content">
-              <div class="alignleft company">Kinematic Wolves - FRC Team</div>
+              <div class="header">Kinematic Wolves - FRC Team</div>
 
-              <div class="alignright">Detroit, Michigan</div>
-              <div style="clear: both"></div>
-              <div class="alignleft">Mechanical Deparment</div>
-              <div class="alignright">September 2017 – June 2021</div>
-              <div style="clear: both"></div>
+              <div class="description">Detroit, Michigan</div>
             </div>
             <div class="content">
-              <div class="alignleft">Team Captain</div>
-              <div class="alignright">September 2020 – June 2021</div>
-              <div style="clear: both"></div>
               <ul class="ui list">
                 <li>
-                  Orchestrated and led team activities, fostering a culture of
-                  collaboration and ensuring the timely achievement of project
-                  milestones
+                  Team Captain
+                  <div class="meta">September 2020 – June 2021</div>
                 </li>
                 <li>
-                  Mentored team members, significantly contributing to their
-                  skill development and overall project success
-                </li>
-
-                <li>
-                  Served as a vital liaison between the mechanical, electrical,
-                  and software departments, fostering a collaborative
-                  environment that resulted in the successful integration of
-                  diverse subsystems
-                </li>
-              </ul>
-            </div>
-            <div class="content">
-              <div class="alignleft">Mechanical Lead</div>
-              <div class="alignright">September 2020 – June 2021</div>
-              <div style="clear: both"></div>
-              <ul class="ui list">
-                <li>
-                  Directed the mechanical aspects of projects, overseeing the
-                  design and implementation of the chassis, elevator, and
-                  manipulator of the robot
+                  Mechanical Lead
+                  <div class="meta">September 2020 – June 2021</div>
                 </li>
                 <li>
-                  Facilitated seamless cross-functional communication by
-                  collaborating with the mechanical, electrical and software
-                  departments
+                  Mechanical Member
+                  <div class="meta">September 2017 – June 2020</div>
                 </li>
               </ul>
             </div>
@@ -594,48 +554,20 @@
 
           <div class="ui card">
             <div class="content">
-              <div class="alignleft company">Adient Plymouth CTU</div>
+              <div class="header">Adient Plymouth CTU</div>
 
-              <div class="alignright">Plymouth, Michigan</div>
-              <div style="clear: both"></div>
+              <div class="description">Plymouth, Michigan</div>
             </div>
+
             <div class="content">
-              <div class="alignleft">
-                Mechanical Engineer Intern - Honda Department
-              </div>
-              <div class="alignright">September 2019 - March 2020</div>
-              <div style="clear: both"></div>
               <ul class="ui list">
                 <li>
-                  Investigated returned car seats to discern whether faults were
-                  attributable to user, dealership, or manufacturer issues
+                  Mechanical Engineer Intern - Honda Department
+                  <div class="meta">September 2019 - March 2020</div>
                 </li>
                 <li>
-                  Identified and addressed persistent faults in returned car
-                  seats, determining root causes
-                </li>
-
-                <li>
-                  Generated comprehensive statistical analyses on car seats,
-                  providing valuable insights for a university student in
-                  Mexico.
-                </li>
-              </ul>
-            </div>
-            <div class="content">
-              <div class="alignleft">
-                Business Analyst Intern - RECARO Department
-              </div>
-              <div class="alignright">September 2018 - June 2019</div>
-              <div style="clear: both"></div>
-              <ul class="ui list">
-                <li>
-                  Conducted in-depth analysis of revenue trends within the
-                  RECARO Department, culminating in comprehensive reviews
-                </li>
-                <li>
-                  Utilized advanced Excel skills to produce statistical reports
-                  on RECARO’s performance.
+                  Business Analyst Intern - RECARO Department
+                  <div class="meta">September 2018 - June 2019</div>
                 </li>
               </ul>
             </div>
@@ -643,119 +575,25 @@
 
           <div class="ui card">
             <div class="content">
-              <div class="alignleft company">Jewish Vocational Services</div>
+              <div class="header">Jewish Vocational Services</div>
 
-              <div class="alignright">Detroit, Michigan</div>
-              <div style="clear: both"></div>
-
-              <div class="alignleft">
-                Support Worker for Disabled Adults Intern
-              </div>
-              <div class="alignright">September 2017 – June 2018</div>
-              <div style="clear: both"></div>
+              <div class="description">Detroit, Michigan</div>
             </div>
             <div class="content">
               <ul class="ui list">
                 <li>
-                  Delivered compassionate care and support to developmentally
-                  disabled adults
-                </li>
-                <li>
-                  Orchestrated and supervised groups of individuals in various
-                  activities, enhancing their daily experiences
-                </li>
-
-                <li>
-                  Developed robust interpersonal skills and empathy through
-                  meaningful interactions.
+                  Disabled Adult Support Worker
+                  <div class="meta">September 2017 – June 2018</div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-        <h1 id="courses">Courses</h1>
-        <div class="ui five doubling stackable cards">
-          <a class="ui raised card" href="https://eecs485.org/" target="_blank">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="content">
-              <div class="center aligned header">Web Systems</div>
-            </div>
-          </a>
-          <a
-            class="ui raised card"
-            href="https://eecs281staff.github.io/eecs281.org/"
-            target="_blank">
-            <div class="ui floating right aligned label">C++</div>
-            <div class="content">
-              <div class="center aligned header">
-                Data Structures and Algorithms
-              </div>
-            </div>
-          </a>
-          <a
-            class="ui raised card"
-            href="https://eecs370.github.io/"
-            target="_blank">
-            <div class="ui floating right aligned label">C</div>
-            <div class="content">
-              <div class="center aligned header">Computer Organization</div>
-            </div>
-          </a>
-          <div class="ui card">
-            <div class="content">
-              <div class="ui floating right aligned label">HTML | CSS | JS</div>
-              <div class="center aligned header">
-                Web Design, Development, and Accessibility
-              </div>
-            </div>
-          </div>
-          <div class="ui card">
-            <div class="ui floating right aligned label">Python</div>
-            <div class="content">
-              <div class="center aligned header">
-                Building Data-Driven Web Applications
-              </div>
-            </div>
-          </div>
-          <div class="ui card">
-            <div class="ui floating right aligned label">HTML | CSS | JS</div>
-            <div class="content">
-              <div class="center aligned header">
-                Human-Centered Software Design and Development
-              </div>
-            </div>
-          </div>
-          <div class="ui card">
-            <div class="content">
-              <div class="ui floating right aligned label">Python</div>
-              <div class="center aligned header">Data-Oriented Programming</div>
-            </div>
-          </div>
-          <a class="ui raised card" href="https://eecs280.org/" target="_blank">
-            <div class="ui floating right aligned label">C++</div>
-            <div class="content">
-              <div class="center aligned header">
-                Programming and Data Structures
-              </div>
-            </div>
-          </a>
-          <a
-            class="ui raised card"
-            href="https://engr101staff.github.io/engr101.org/"
-            target="_blank">
-            <div class="ui floating right aligned label">MATLAB | C++</div>
-            <div class="content">
-              <div class="center aligned header">Computers and Programming</div>
-            </div>
-          </a>
-        </div>
-        <!--courses stackable cards-->
       </div>
       <!--page ui container-->
 
       <footer class="ui inverted segment center aligned">
-        <div>&copy; 2023 Elijah Cantu</div>
+        <div>&copy; 2023 - 2024 Elijah Cantu</div>
       </footer>
     </div>
     <!--pusher-->
@@ -769,7 +607,5 @@
       });
       $nav_bar.sidebar("attach events", "#nav_bar_button");
     </script>
-
-
   </body>
 </html>
