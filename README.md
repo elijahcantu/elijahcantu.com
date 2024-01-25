@@ -1,1 +1,1 @@
-Repo for my personal website using Fomantic UI. 
+My personal website
