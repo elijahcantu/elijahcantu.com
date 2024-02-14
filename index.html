@@ -27,11 +27,23 @@
     i.colored {
       font-size: 30px;
     }
+
+    .clear {
+      clear: both;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
   </style>
 </head>
 
 <body>
-  <div class="ui container">
+  <div class="ui text container">
     <a class="ui right floated icon button" data-tooltip="Email caelijah@umich.edu" data-position="bottom right"
       href="mailto:caelijah@umich.edu" target="_blank">
       <i class="ui icon envelope"></i>
@@ -51,10 +63,11 @@
           src="assets/images/elijahcantu.jpg">
         Elijah Cantu is a junior at the University of Michigan College of Engineering, where he holds a full-ride
         scholarship. He is currently pursuing a Bachelor of Science in Engineering in Computer Science and a minor in
-        User Experience Design through the School of Information. His interests span diverse areas, including full-stack and game development.
+        User Experience Design through the School of Information. His interests span diverse areas, including full-stack
+        and game development.
       </p>
     </header>
-    <div class="ui horizontal divider"></div>
+    <div class="ui section hidden divider"></div>
     <nav class="ui equal width menu">
       <a href="#projects" class="item">Projects</a>
       <a href="#skills" class="item">Skills</a>
@@ -63,11 +76,12 @@
     </nav>
     <h1 id="projects">Projects</h1>
     <p>
-      If you are a recruiter, please feel free to <a href="mailto:caelijah@umich.edu" target="_blank" style="color:blue">contact me</a>
+      If you are a recruiter, please feel free to <a href="mailto:caelijah@umich.edu" target="_blank"
+        style="color:blue">contact me</a>
       for access to
       my private project repositories
     </p>
-    <div class="ui three doubling stackable cards">
+    <div class="ui two doubling stackable cards">
       <a class="ui disabled raised card" href="https://devicelorean.com" target="_blank">
         <div class="ui floating bottom left aligned label">In Development</div>
         <div class="content">
@@ -122,7 +136,7 @@
     </div>
     <!--projects-->
     <h1 id="skills">Skills</h1>
-    <div class="ui three doubling stackable cards">
+    <div class="ui one  cards">
       <div class="ui card">
         <div class="content">
           <div class="header">
@@ -173,7 +187,7 @@
     </div>
     <!--skills stackable cards-->
     <h1 id="courses">Courses</h1>
-    <div class="ui three doubling stackable cards">
+    <div class="ui two doubling stackable cards">
       <a class="ui raised card" href="https://eecs485.org/" target="_blank">
         <div class="content">
           <div class="header">
@@ -233,27 +247,39 @@
     </div>
     <!--courses stackable cards-->
     <h1 id="experience">Experience</h1>
-    <div class="ui three doubling stackable cards">
+    <div class="ui one  cards">
       <div class="ui card">
         <div class="content">
-          <div class="header">Kinematic Wolves</div>
-          <div class="description">FIRST Robotics Competition Team</div>
-          <div class="description">Sept 2017 - June 2021</div>
-          <div class="description">Detroit, Michigan</div>
+          <div>
+            <span class="ui header">Kinematic Wolves</span>
+            <span class="description">| FIRST Robotics Competition Team</span>
+          </div>
+          <div class=" left">Detroit, Michigan</div>
+          <div class=" right">Sept 2017 - June 2021</div>
+          <div class="clear"></div>
+
+
         </div>
         <div class="content">
           <ul class="ui list">
             <li>
-              Team Captain
-              <div class="meta">Sept 2020 – June 2021</div>
+              <div class="left">Team Captain</div>
+              <div class=" right">Sept 2020 – June 2021</div>
+              <div class="clear"></div>
+
+            </li>
+
+            <li>
+              <div class="left">Mechanical Lead</div>
+              <div class=" right">Sept 2020 – June 2021</div>
+              <div class="clear"></div>
+
             </li>
             <li>
-              Mechanical Lead
-              <div class="meta">Sept 2020 – June 2021</div>
-            </li>
-            <li>
-              Mechanical Member
-              <div class="meta">Sept 2017 – June 2020</div>
+              <div class="left">Mechanical Member</div>
+              <div class="right">Sept 2017 – June 2021</div>
+              <div class="clear"></div>
+
             </li>
           </ul>
         </div>
@@ -261,18 +287,24 @@
       <div class="ui card">
         <div class="content">
           <div class="header">Adient Plymouth CTU</div>
-          <div class="description">Sept 2018 - March 2020</div>
-          <div class="description">Plymouth, Michigan</div>
+          <div class="left">Plymouth, Michigan</div>
+          <div class="right">Sept 2018 - March 2020</div>
+          <div class="clear"></div>
+
         </div>
         <div class="content">
           <ul class="ui list">
             <li>
-              Mechanical Engineer | Honda Department
-              <div class="meta">Sept 2019 - Mar 2020 | Intern</div>
+              <div class="left">Mechanical Engineer | Honda Department</div>
+              <div class=" right">Sept 2019 - Mar 2020 | Intern</div>
+              <div class="clear"></div>
+
             </li>
             <li>
-              Business Analyst | RECARO Department
-              <div class="meta">Sept 2018 - June 2019 | Intern</div>
+              <div class="left">Business Analyst | RECARO Department</div>
+              <div class=" right">Sept 2018 - June 2019 | Intern</div>
+              <div class="clear"></div>
+
             </li>
           </ul>
         </div>
@@ -280,14 +312,19 @@
       <div class="ui card">
         <div class="content">
           <div class="header">Jewish Vocational Services</div>
-          <div class="description">Sept 2017 - June 2018</div>
-          <div class="description">Detroit, Michigan</div>
+          Detroit, Michigan
+
+          <div class="right">Sept 2017 - June 2018</div>
+          <div class="clear"></div>
+
         </div>
         <div class="content">
           <ul class="ui list">
             <li>
-              Disabled Adult Support Worker
-              <div class="meta">Sept 2017 - June 2018 | Intern</div>
+              <div class="left">Disabled Adult Support Worker</div>
+              <div class=" right">Sept 2017 - June 2018 | Intern</div>
+              <div class="clear"></div>
+
             </li>
           </ul>
         </div>
