@@ -63,8 +63,7 @@ body {
 .icon-container{
   background-color:transparent;
   border:none;
-  width:25px;
-  height:25px;
+
   padding:0px;
   float:right;
   margin-left:7.5px;
@@ -95,6 +94,10 @@ a{
 
 
 
+svg{
+  width:25px;
+  height:25px;
+}
 
 
 
