@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const moonIcon = document.getElementById("moon-icon");
   const themeButton = document.getElementById("theme-button");
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  const socialIcons = document.querySelectorAll(".social");
+  const icons = document.querySelectorAll(".social");
 
 
 
@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle("light-mode", theme === "light");
     sunIcon.style.display = theme === "dark" ? "block" : "none";
     moonIcon.style.display = theme === "dark" ? "none" : "block";
-    socialIcons.forEach(icon => {
-        icon.style.fill = theme === "dark" ? "white" : "black";
+    icons.forEach(icon => {
+      icon.style.fill = theme === "dark" ? "white" : "black";
     });
- 
+
   }
 });

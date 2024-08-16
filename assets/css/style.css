@@ -5,6 +5,10 @@ body {
 
 h1{
   display: inline;
+  margin:0px;
+}
+p{
+
 }
 .content {
 
@@ -14,11 +18,9 @@ h1{
 .headshot{
   border-radius: 5%;
   float: left;
-  margin-right:10px;
+  margin-right:16px;
   display:none;
 }
-
-
 
 :root {
   --text-for-light: black;
@@ -36,7 +38,6 @@ body {
 }
 
 
-/* Start with native detection */
 @media (prefers-color-scheme: dark) {
   body {
     color: var(--text-for-dark);
@@ -44,7 +45,6 @@ body {
   }
 }
 
-/* Apply colors based on toggled class */
 .dark-mode {
   color: var(--text-for-dark);
   background-color: var(--bkg-for-dark);
@@ -60,53 +60,40 @@ body {
 #sun-icon{
   display:none;
 }
-button{
+.icon-container{
   background-color:transparent;
   border:none;
-  width:30px;
-  height:30px;
+  width:25px;
+  height:25px;
   padding:0px;
   float:right;
-
-  margin-left:5px;
-}
-a{
-  color:blue;
-  
-}
-.icon-link{
-  padding:0px;
+  margin-left:7.5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+a{
+  color:blue;
+}
+
 .dark-mode a {
   color: #99C3FF;
 }
-
-
 
 @media (min-width: 768px) {
   .content {
       width: 75vw; 
   }
- 
- 
 }
-
-
 
 @media (min-width: 1024px) {
   .content {
       width: 50vw;
   }
-
 }
 
-.icon{
-  width:25px;
-  height:25px;
-}
+
 
 
 
