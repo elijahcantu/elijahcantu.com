@@ -1,0 +1,119 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  visibility:hidden;
+}
+
+h1{
+  display: inline;
+}
+.content {
+
+  margin: 0 auto;
+}
+
+.headshot{
+  border-radius: 5%;
+  float: left;
+  margin-right:10px;
+  display:none;
+}
+
+
+
+:root {
+  --text-for-light: black;
+  --bkg-for-light: white;
+  --text-for-dark: white;
+  --bkg-for-dark: black;
+ 
+}
+
+body {
+  background-color: var(--bkg-for-light);
+  color: var(--text-for-light);
+  font-family: sans-serif;
+  font-weight: 450;
+}
+
+
+/* Start with native detection */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--text-for-dark);
+    background-color: var(--bkg-for-dark);
+  }
+}
+
+/* Apply colors based on toggled class */
+.dark-mode {
+  color: var(--text-for-dark);
+  background-color: var(--bkg-for-dark);
+}
+
+.light-mode {
+  color: var(--text-for-light);
+  background-color: var(--bkg-for-light);
+}
+#moon-icon{
+  display:none;
+}
+#sun-icon{
+  display:none;
+}
+button{
+  background-color:transparent;
+  border:none;
+  width:30px;
+  height:30px;
+  padding:0px;
+  float:right;
+
+  margin-left:5px;
+}
+a{
+  color:blue;
+  
+}
+.icon-link{
+  padding:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode a {
+  color: #99C3FF;
+}
+
+
+
+@media (min-width: 768px) {
+  .content {
+      width: 75vw; 
+  }
+ 
+ 
+}
+
+
+
+@media (min-width: 1024px) {
+  .content {
+      width: 50vw;
+  }
+
+}
+
+.icon{
+  width:25px;
+  height:25px;
+}
+
+
+
+
+
+
+
+
+
+
