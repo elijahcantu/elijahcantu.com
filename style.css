@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: #99c3ff;
+}
+
+#center {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #center {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  #center {
+    width: 50vw;
+  }
+}
