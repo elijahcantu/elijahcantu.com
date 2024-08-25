@@ -1,11 +1,11 @@
-.no-js {
-  visibility: visible !important;
-}
-
 a.card{
   text-decoration: none;
 }
 
 .card{
   height:100% !important;
+}
+
+.no-js {
+  visibility: visible !important;
 }
